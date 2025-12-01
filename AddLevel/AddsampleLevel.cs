@@ -42,7 +42,6 @@ namespace AddLevel
 
             RoomNode combatNode = base.createNode(null, "OutsideTower5".AsHaxeString(), null, null)
                 .addFlag(new RoomFlag.Outside())
-                .setConstraint(new LinkConstraint.NeverUp())
                 .addFlag(new RoomFlag.Holes());
 
 
@@ -53,7 +52,6 @@ namespace AddLevel
             RoomNode demonNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
                 .addFlag(new RoomFlag.Outside())
                 .addFlag(new RoomFlag.Holes())
-                .setConstraint(new LinkConstraint.NeverUp())
                 .addNpc(new NpcId.CryptDemon());
 
             demonNode.set_parent(combatNode);
@@ -64,7 +62,6 @@ namespace AddLevel
                 .addFlag(new RoomFlag.DarkRoom())
                 .addFlag(new RoomFlag.Outside())
                 .addFlag(new RoomFlag.Holes())
-                .setConstraint(new LinkConstraint.NeverUp())
                 .addNpc(new NpcId.Knight());
 
 
@@ -73,7 +70,6 @@ namespace AddLevel
 
             RoomNode exitNode = base.createExit("ClockTower".AsHaxeString(), "RoofEndExit".AsHaxeString(), null, "end".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
-            .setConstraint(new LinkConstraint.NeverUp())
             .addFlag(new RoomFlag.Holes());
             exitNode.set_parent(knightNode);
 

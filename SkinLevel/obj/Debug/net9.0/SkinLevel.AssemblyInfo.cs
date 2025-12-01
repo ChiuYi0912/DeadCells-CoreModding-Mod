@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SkinLevel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd9d486d5fdbbcf930815c300cc99db86de3bcdb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9b8158ba30948bf5904b97b3dc412ee44d19aec")]
 [assembly: System.Reflection.AssemblyProductAttribute("SkinLevel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SkinLevel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
