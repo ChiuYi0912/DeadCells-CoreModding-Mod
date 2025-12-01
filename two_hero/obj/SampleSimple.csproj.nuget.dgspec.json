@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SampleSimple.csproj": {}
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SampleSimple.csproj": {}
   },
   "projects": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SampleSimple.csproj": {
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SampleSimple.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SampleSimple.csproj",
+        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SampleSimple.csproj",
         "projectName": "SampleSimple",
-        "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SampleSimple.csproj",
+        "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SampleSimple.csproj",
         "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\obj\\",
+        "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visualstudio\\sharde\\NuGetPackages"

@@ -44,11 +44,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\DebugMod.csproj",
+      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DebugMod\\DebugMod.csproj",
       "projectName": "DebugMod",
-      "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\DebugMod.csproj",
+      "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DebugMod\\DebugMod.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\obj\\",
+      "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DebugMod\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualstudio\\sharde\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj": {}
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj": {}
   },
   "projects": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj": {
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj",
+        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj",
         "projectName": "LibraryMod",
-        "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj",
+        "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj",
         "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\obj\\",
+        "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visualstudio\\sharde\\NuGetPackages"

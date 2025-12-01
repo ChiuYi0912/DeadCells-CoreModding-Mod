@@ -44,11 +44,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
       "projectName": "EnemiesVsEnemies",
-      "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+      "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\obj\\",
+      "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualstudio\\sharde\\NuGetPackages"

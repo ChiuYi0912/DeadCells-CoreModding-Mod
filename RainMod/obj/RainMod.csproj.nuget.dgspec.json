@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\RainMod\\RainMod.csproj": {}
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj": {}
   },
   "projects": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\RainMod\\RainMod.csproj": {
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\RainMod\\RainMod.csproj",
+        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj",
         "projectName": "RainMod",
-        "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\RainMod\\RainMod.csproj",
+        "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj",
         "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\RainMod\\obj\\",
+        "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visualstudio\\sharde\\NuGetPackages"

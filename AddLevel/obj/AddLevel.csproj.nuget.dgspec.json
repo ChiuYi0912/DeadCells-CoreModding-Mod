@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\AddLevel\\AddLevel.csproj": {}
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\AddLevel\\AddLevel.csproj": {}
   },
   "projects": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\AddLevel\\AddLevel.csproj": {
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\AddLevel\\AddLevel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\AddLevel\\AddLevel.csproj",
+        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\AddLevel\\AddLevel.csproj",
         "projectName": "AddLevel",
-        "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\AddLevel\\AddLevel.csproj",
+        "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\AddLevel\\AddLevel.csproj",
         "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\AddLevel\\obj\\",
+        "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\AddLevel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visualstudio\\sharde\\NuGetPackages"

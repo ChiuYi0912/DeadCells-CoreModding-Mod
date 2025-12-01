@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\Katana\\ChiuYiUI-zh.csproj",
+      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Katana\\ChiuYiUI-zh.csproj",
       "projectName": "ChiuYiUI-zh",
-      "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\Katana\\ChiuYiUI-zh.csproj",
+      "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Katana\\ChiuYiUI-zh.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\Katana\\obj\\",
+      "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Katana\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualstudio\\sharde\\NuGetPackages"

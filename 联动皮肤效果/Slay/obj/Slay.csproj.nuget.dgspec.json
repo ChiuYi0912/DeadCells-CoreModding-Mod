@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\Slay.csproj": {}
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\Slay.csproj": {}
   },
   "projects": {
-    "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\Slay.csproj": {
+    "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\Slay.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\Slay.csproj",
+        "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\Slay.csproj",
         "projectName": "Slay",
-        "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\Slay.csproj",
+        "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\Slay.csproj",
         "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\obj\\",
+        "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\visualstudio\\sharde\\NuGetPackages"

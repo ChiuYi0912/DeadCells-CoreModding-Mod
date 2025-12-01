@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\Weapontemplates\\Weapontemplates.csproj",
+      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Weapontemplates\\Weapontemplates.csproj",
       "projectName": "Weapontemplates",
-      "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\Weapontemplates\\Weapontemplates.csproj",
+      "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Weapontemplates\\Weapontemplates.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\Weapontemplates\\obj\\",
+      "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Weapontemplates\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualstudio\\sharde\\NuGetPackages"

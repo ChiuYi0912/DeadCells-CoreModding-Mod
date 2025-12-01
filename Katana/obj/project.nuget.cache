@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wTgxuDEd/OY=",
+  "dgSpecHash": "vGqeZFU+Oh8=",
   "success": true,
-  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\sample\\Katana\\ChiuYiUI-zh.csproj",
+  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Katana\\ChiuYiUI-zh.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\awssdk.core\\4.0.0.28\\awssdk.core.4.0.0.28.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.6.2\\awssdk.dynamodbv2.4.0.6.2.nupkg.sha512",

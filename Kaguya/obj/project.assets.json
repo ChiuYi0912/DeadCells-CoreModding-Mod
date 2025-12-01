@@ -129,11 +129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\sample\\Kaguya\\Kaguya.csproj",
+      "projectUniqueName": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Kaguya\\Kaguya.csproj",
       "projectName": "Kaguya",
-      "projectPath": "D:\\Adeadcellsmod\\core-main\\sample\\Kaguya\\Kaguya.csproj",
+      "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Kaguya\\Kaguya.csproj",
       "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-      "outputPath": "D:\\Adeadcellsmod\\core-main\\sample\\Kaguya\\obj\\",
+      "outputPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Kaguya\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\visualstudio\\sharde\\NuGetPackages"

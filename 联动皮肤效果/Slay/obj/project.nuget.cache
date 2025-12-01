@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vfcMnZkeLCw=",
+  "dgSpecHash": "RmhnmlrvkM8=",
   "success": true,
-  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\sample\\联动皮肤效果\\Slay\\Slay.csproj",
+  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\联动皮肤效果\\Slay\\Slay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\awssdk.core\\4.0.0.28\\awssdk.core.4.0.0.28.nupkg.sha512",
     "C:\\Users\\Michael\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.6.2\\awssdk.dynamodbv2.4.0.6.2.nupkg.sha512",

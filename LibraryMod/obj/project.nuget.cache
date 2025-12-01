@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iXpT+qz3XBU=",
+  "dgSpecHash": "MLAYUWTNH8s=",
   "success": true,
-  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj",
+  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\deadcellscoremodding.mdk.1.0.1.nupkg.sha512"
   ],

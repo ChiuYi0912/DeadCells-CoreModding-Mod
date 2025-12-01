@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e0yzmxBjaXo=",
+  "dgSpecHash": "opSBG2EHdUc=",
   "success": true,
-  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\sample\\Fxmod\\FxMod.csproj",
+  "projectFilePath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Fxmod\\FxMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\deadcellscoremodding.mdk.1.0.1.nupkg.sha512"
   ],
