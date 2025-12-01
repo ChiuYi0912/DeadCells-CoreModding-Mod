@@ -1,0 +1,17 @@
+[*.cs]
+
+# IDE0052: 删除未读的私有成员
+dotnet_diagnostic.IDE0052.severity = silent
+[*.cs]
+
+# IDE0052: 删除未读的私有成员
+dotnet_diagnostic.IDE0052.severity = none
+
+# IDE0290: 使用主构造函数
+dotnet_diagnostic.IDE0290.severity = none
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none
+
+# IDE0005: Using 指令是不需要的。
+dotnet_diagnostic.IDE0005.severity = none

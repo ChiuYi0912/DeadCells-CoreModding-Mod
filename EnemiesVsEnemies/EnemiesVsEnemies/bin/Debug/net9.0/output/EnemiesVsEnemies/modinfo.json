@@ -1,0 +1,10 @@
+{
+  "name": "EnemiesVsEnemies",
+  "version": "1.0.0",
+  "type": "mod",
+  "assemblies": [
+    "EnemiesVsEnemies.dll"
+  ],
+  "main": "EnemiesVsEnemies.ModMain",
+  "dependencies": []
+}

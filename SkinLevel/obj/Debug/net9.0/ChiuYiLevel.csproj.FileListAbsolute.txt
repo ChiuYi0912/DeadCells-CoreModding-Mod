@@ -1,0 +1,12 @@
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\bin\Debug\net9.0\ChiuYiLevel.deps.json
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\bin\Debug\net9.0\ChiuYiLevel.dll
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\bin\Debug\net9.0\ChiuYiLevel.pdb
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.csproj.AssemblyReference.cache
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.AssemblyInfoInputs.cache
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.AssemblyInfo.cs
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.csproj.CoreCompileInputs.cache
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.dll
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\refint\ChiuYiLevel.dll
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ChiuYiLevel.pdb
+D:\Adeadcellsmod\core-main(5)\core-main\sample\FirstDeadCellsMod\obj\Debug\net9.0\ref\ChiuYiLevel.dll

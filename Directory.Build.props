@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <RepositoryUrl>https://github.com/dead-cells-core-modding/core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <MDKOutputPath>../bin</MDKOutputPath>
+  </PropertyGroup>
+</Project>

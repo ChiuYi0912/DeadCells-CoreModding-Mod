@@ -1,0 +1,12 @@
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.csproj.AssemblyReference.cache
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.GeneratedMSBuildEditorConfig.editorconfig
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.AssemblyInfoInputs.cache
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.AssemblyInfo.cs
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.csproj.CoreCompileInputs.cache
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\bin\Debug\net9.0\EnemiesVsEnemies.deps.json
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\bin\Debug\net9.0\EnemiesVsEnemies.dll
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\bin\Debug\net9.0\EnemiesVsEnemies.pdb
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.dll
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\refint\EnemiesVsEnemies.dll
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.pdb
+F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\ref\EnemiesVsEnemies.dll

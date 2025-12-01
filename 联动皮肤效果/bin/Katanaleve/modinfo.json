@@ -1,0 +1,11 @@
+{
+  "name": "Katanaleve",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "Overskin.dll"
+  ],
+  "main": "Katanaleve.Katanaleve",
+  "dependencies": []
+}

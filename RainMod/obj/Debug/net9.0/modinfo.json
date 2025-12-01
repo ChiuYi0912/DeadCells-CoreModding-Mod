@@ -1,0 +1,11 @@
+{
+  "name": "RainMod",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "RainMod.dll"
+  ],
+  "main": "RainMod.RainMain",
+  "dependencies": []
+}

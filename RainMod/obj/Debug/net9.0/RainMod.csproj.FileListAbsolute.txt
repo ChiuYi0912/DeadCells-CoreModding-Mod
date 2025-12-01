@@ -1,0 +1,12 @@
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.csproj.AssemblyReference.cache
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.AssemblyInfoInputs.cache
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.AssemblyInfo.cs
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.csproj.CoreCompileInputs.cache
+D:\Adeadcellsmod\core-main\sample\RainMod\bin\Debug\net9.0\RainMod.deps.json
+D:\Adeadcellsmod\core-main\sample\RainMod\bin\Debug\net9.0\RainMod.dll
+D:\Adeadcellsmod\core-main\sample\RainMod\bin\Debug\net9.0\RainMod.pdb
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.dll
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\refint\RainMod.dll
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\RainMod.pdb
+D:\Adeadcellsmod\core-main\sample\RainMod\obj\Debug\net9.0\ref\RainMod.dll

@@ -1,0 +1,11 @@
+{
+  "name": "FxMod",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "FxMod.dll"
+  ],
+  "main": "FxMod.FxMod",
+  "dependencies": []
+}

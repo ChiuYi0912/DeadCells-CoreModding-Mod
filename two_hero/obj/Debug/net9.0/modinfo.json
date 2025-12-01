@@ -1,0 +1,11 @@
+{
+  "name": "changeweapon",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "SampleSimple.dll"
+  ],
+  "main": "SampleSimple.SimpleMod",
+  "dependencies": []
+}

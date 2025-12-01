@@ -1,0 +1,11 @@
+{
+  "name": "SampleHook",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "SampleHook.dll"
+  ],
+  "main": "SampleHook.SampleHookMod",
+  "dependencies": []
+}
