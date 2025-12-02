@@ -3,6 +3,7 @@ using dc;
 using dc.hl.types;
 using dc.level;
 using dc.libs;
+using dc.tool;
 using Hashlink.Virtuals;
 using ModCore.Utitities;
 
@@ -12,6 +13,7 @@ public class Out_Clock : LevelStruct
 {
     public Out_Clock(User user, virtual_baseLootLevel_biome_bonusTripleScrollAfterBC_cellBonus_dlc_doubleUps_eliteRoomChance_eliteWanderChance_flagsProps_group_icon_id_index_loreDescriptions_mapDepth_minGold_mobDensity_mobs_name_nextLevels_parallax_props_quarterUpsBC3_quarterUpsBC4_specificLoots_specificSubBiome_transitionTo_tripleUps_worldDepth_ level, Rand rng) : base(user, level, rng)
     {
+
     }
 
     public override RoomNode buildMainRooms()
@@ -76,7 +78,7 @@ public class Out_Clock : LevelStruct
 
 
 
-        RoomNode exitNode = base.createExit("ClockTower".AsHaxeString(), "RoofEndExit".AsHaxeString(), null, "end".AsHaxeString())
+        RoomNode exitNode = base.createExit("T_PrisonCorrupt".AsHaxeString(), "RoofEndExit".AsHaxeString(), null, "end".AsHaxeString())
         .addFlag(new RoomFlag.Outside())
         .addFlag(new RoomFlag.Holes());
         exitNode.set_parent(knightNode);

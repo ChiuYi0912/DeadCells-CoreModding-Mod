@@ -20,8 +20,10 @@
   <PropertyGroup>
     <GenerateDiffCDB>true</GenerateDiffCDB>
     <GameVersion>35</GameVersion>
-    <GenerateSinglePakFile>false</GenerateSinglePakFile>
+    <GenerateSinglePakFile>true</GenerateSinglePakFile>
   </PropertyGroup>
 
-
+  <ItemGroup>
+    <PackAssets Include="assets/**/*" RootInPak="textures" />
+  </ItemGroup>
 </Project>
