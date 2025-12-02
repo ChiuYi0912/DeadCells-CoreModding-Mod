@@ -1,11 +1,14 @@
 using System;
+using Amazon.Runtime.Internal.Util;
 using dc;
+using dc.haxe;
 using dc.hl.types;
 using dc.level;
 using dc.libs;
 using dc.tool;
 using Hashlink.Virtuals;
 using ModCore.Utitities;
+using Serilog;
 
 namespace Outside_Clock;
 
@@ -35,7 +38,7 @@ public class Out_Clock : LevelStruct
         entranceNode.addGenData(clockTowerGenData);
 
 
-        RoomNode combatNode = base.createNode(null, "OutsideTower4".AsHaxeString(), null, null)
+        RoomNode combatNode = base.createNode(null, "OutsideTower4".AsHaxeString(), null, "A1".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes());
 
@@ -57,13 +60,12 @@ public class Out_Clock : LevelStruct
 
         demonNode1.set_parent(demonNode);
 
-        RoomNode demonNode2 = base.createNode(null, "Teleport_UD".AsHaxeString(), null, null)
+        RoomNode demonNode2 = base.createNode(null, "Teleport_UD".AsHaxeString(), null, "B1".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes())
             .addNpc(new NpcId.CryptDemon());
 
         demonNode2.set_parent(demonNode1);
-
 
 
         RoomNode knightNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
@@ -135,10 +137,41 @@ public class Out_Clock : LevelStruct
     public override void buildSecondaryRooms()
     {
         base.buildSecondaryRooms();
+        RoomNode roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
 
-        RoomNode roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 6, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 7, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
+        roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("A1".AsHaxeString()), null);
+
+        roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("A1".AsHaxeString()), null);
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 1, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 7, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
+
+        roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("exit".AsHaxeString()), null);
+
+        roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addBefore(base.getId("B1".AsHaxeString()), null);
     }
 }
 
