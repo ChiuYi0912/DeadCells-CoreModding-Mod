@@ -18,17 +18,10 @@
   </ItemGroup>
 
   <PropertyGroup>
-    <GenerateDiffCDB>false</GenerateDiffCDB>
+    <GenerateDiffCDB>true</GenerateDiffCDB>
     <GameVersion>35</GameVersion>
     <GenerateSinglePakFile>false</GenerateSinglePakFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackAssets Include="assets/**/*" RootInPak="textures" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="assets\" />
-  </ItemGroup>
 
 </Project>

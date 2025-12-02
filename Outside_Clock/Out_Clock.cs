@@ -33,7 +33,7 @@ public class Out_Clock : LevelStruct
         entranceNode.addGenData(clockTowerGenData);
 
 
-        RoomNode combatNode = base.createNode(null, "OutsideTower5".AsHaxeString(), null, null)
+        RoomNode combatNode = base.createNode(null, "OutsideTower4".AsHaxeString(), null, null)
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes());
 
@@ -41,13 +41,26 @@ public class Out_Clock : LevelStruct
         combatNode.set_parent(entranceNode);
 
 
-
-        RoomNode demonNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
+        RoomNode demonNode = base.createNode(null, "OutsideCross1".AsHaxeString(), null, "exit".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes())
             .addNpc(new NpcId.CryptDemon());
 
         demonNode.set_parent(combatNode);
+
+        RoomNode demonNode1 = base.createNode(null, "Teleport_UD".AsHaxeString(), null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .addNpc(new NpcId.CryptDemon());
+
+        demonNode1.set_parent(demonNode);
+
+        RoomNode demonNode2 = base.createNode(null, "Teleport_UD".AsHaxeString(), null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .addNpc(new NpcId.CryptDemon());
+
+        demonNode2.set_parent(demonNode1);
 
 
 
@@ -59,6 +72,8 @@ public class Out_Clock : LevelStruct
 
 
         knightNode.set_parent(demonNode);
+
+
 
 
         RoomNode exitNode = base.createExit("ClockTower".AsHaxeString(), "RoofEndExit".AsHaxeString(), null, "end".AsHaxeString())
@@ -113,6 +128,15 @@ public class Out_Clock : LevelStruct
                 }
             }
         }
+    }
+
+    public override void buildSecondaryRooms()
+    {
+        base.buildSecondaryRooms();
+
+        RoomNode roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 6, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 7, null).addFlag(new RoomFlag.Outside()).addBefore(base.getId("exit".AsHaxeString()), null);
     }
 }
 
