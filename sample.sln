@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChiuYiUI-en", "联动皮肤
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddLevel", "AddLevel\AddLevel.csproj", "{3676BB2F-E4B5-4EA2-81F9-701954D946D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outside_Clock", "Outside_Clock\Outside_Clock.csproj", "{E032DD5E-D890-439E-B6F6-C018B07A0529}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -287,6 +289,18 @@ Global
 		{3676BB2F-E4B5-4EA2-81F9-701954D946D7}.Release|x64.Build.0 = Release|Any CPU
 		{3676BB2F-E4B5-4EA2-81F9-701954D946D7}.Release|x86.ActiveCfg = Release|Any CPU
 		{3676BB2F-E4B5-4EA2-81F9-701954D946D7}.Release|x86.Build.0 = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|x64.Build.0 = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Debug|x86.Build.0 = Debug|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|x64.ActiveCfg = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|x64.Build.0 = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|x86.ActiveCfg = Release|Any CPU
+		{E032DD5E-D890-439E-B6F6-C018B07A0529}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
