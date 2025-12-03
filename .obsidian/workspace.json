@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A-Remote Viewing/LevelStruct/PrisonStart/struct.md",
+                "file": "A-Remote Viewing/LevelStruct/PrisonRoof/struct.md",
                 "mode": "source",
                 "source": false
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A-Remote Viewing/LevelStruct/PrisonStart/struct.md",
+                "file": "A-Remote Viewing/LevelStruct/PrisonRoof/struct.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -185,18 +185,20 @@
   },
   "active": "d203d3094106fe38",
   "lastOpenFiles": [
-    "A-Remote Viewing/LevelStruct/PrisonStart",
-    "A-Remote Viewing/LevelStruct/PrisonRoof/struct.md",
+    "Outside_Clock/obj/Debug/net9.0/res.pak",
+    "Outside_Clock/obj/Debug/net9.0/_diffCDB.pak",
+    "Outside_Clock/obj/Debug/net9.0/modinfo.json",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.csproj.FileListAbsolute.txt",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.pdb",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.dll",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.sourcelink.json",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.csproj.CoreCompileInputs.cache",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.AssemblyInfo.cs",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.AssemblyInfoInputs.cache",
+    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.GeneratedMSBuildEditorConfig.editorconfig",
+    "A-Remote Viewing/clock/struct/struct.md",
     "A-Remote Viewing/LevelStruct/PrisonStart/struct.md",
-    "README.md",
-    "A-Remote Viewing/LevelStruct/PrisonRoof",
-    "A-Remote Viewing/LevelStruct",
-    "A-Remote Viewing",
-    "Remote Viewing/LevelStruct/PrisonRoof",
-    "Remote Viewing/LevelStruct/新建文件夹",
-    "Remote Viewing/LevelStruct",
-    "Remote Viewing/新建文件夹",
-    "Remote Viewing",
-    "新建文件夹"
+    "A-Remote Viewing/LevelStruct/PrisonRoof/struct.md",
+    "README.md"
   ]
 }

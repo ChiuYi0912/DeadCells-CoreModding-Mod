@@ -1,0 +1,11 @@
+{
+  "name": "Delete_NewsPanel",
+  "version": "1.0.0",
+  "type": "mod",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "Delete-NewsPanel.dll"
+  ],
+  "main": "Delete_NewsPanel.HookNewsPanel",
+  "dependencies": []
+}

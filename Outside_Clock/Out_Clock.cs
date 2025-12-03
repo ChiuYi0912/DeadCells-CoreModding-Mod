@@ -4,17 +4,20 @@ using dc;
 using dc.haxe;
 using dc.hl.types;
 using dc.level;
+using dc.level.gen.mapbuilder;
 using dc.libs;
 using dc.tool;
 using Hashlink.Virtuals;
 using ModCore.Utitities;
 using Serilog;
+using Serilog.Debugging;
 
 namespace Outside_Clock;
 
 public class Out_Clock : LevelStruct
 {
-    public Out_Clock(User user, virtual_baseLootLevel_biome_bonusTripleScrollAfterBC_cellBonus_dlc_doubleUps_eliteRoomChance_eliteWanderChance_flagsProps_group_icon_id_index_loreDescriptions_mapDepth_minGold_mobDensity_mobs_name_nextLevels_parallax_props_quarterUpsBC3_quarterUpsBC4_specificLoots_specificSubBiome_transitionTo_tripleUps_worldDepth_ level, Rand rng) : base(user, level, rng)
+
+    public Out_Clock(User user, virtual_baseLootLevel_biome_bonusTripleScrollAfterBC_cellBonus_dlc_doubleUps_eliteRoomChance_eliteWanderChance_flagsProps_group_icon_id_index_loreDescriptions_mapDepth_minGold_mobDensity_mobs_name_nextLevels_parallax_props_quarterUpsBC3_quarterUpsBC4_specificLoots_specificSubBiome_transitionTo_tripleUps_worldDepth_ lInfos, Rand rng) : base(user, lInfos, rng)
     {
 
     }
@@ -22,12 +25,11 @@ public class Out_Clock : LevelStruct
     public override RoomNode buildMainRooms()
     {
 
-        RoomNode entranceNode = base.createNode(null, "TU_BasicEntrance".AsHaxeString(), null, "start".AsHaxeString());
+        RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
         entranceNode.addFlag(new RoomFlag.Outside());
         entranceNode.addFlag(new RoomFlag.NoExitSizeCheck());
         entranceNode.addFlag(new RoomFlag.Holes());
-        entranceNode.setConstraint(new LinkConstraint.NeverUp());
-
+        entranceNode.setConstraint(new LinkConstraint.RightOnly());
 
         var forcedBiome = "ClockTower".AsHaxeString();
         var virtual_add = new virtual_specificBiome_();
@@ -42,8 +44,24 @@ public class Out_Clock : LevelStruct
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes());
 
-
         combatNode.set_parent(entranceNode);
+
+
+        RoomNode combatNode2 = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.LeftOnly());
+
+        combatNode2.set_parent(entranceNode);
+
+        RoomNode combatNode1 = base.createNode("Teleport".AsHaxeString(), null, null, "A2".AsHaxeString())
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.LeftOnly());
+
+        combatNode1.set_parent(combatNode2);
+
+
 
 
         RoomNode demonNode = base.createNode(null, "OutsideCross1".AsHaxeString(), null, "exit".AsHaxeString())
@@ -132,6 +150,8 @@ public class Out_Clock : LevelStruct
                 }
             }
         }
+
+
     }
 
     public override void buildSecondaryRooms()
@@ -141,17 +161,53 @@ public class Out_Clock : LevelStruct
         .addFlag(new RoomFlag.Outside())
         .addBefore(base.getId("exit".AsHaxeString()), null);
 
-        roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("A1".AsHaxeString()), null);
+        // roomNode = base.createNode(null, "Combat".AsHaxeString(), null, null)
+        // .addFlag(new RoomFlag.Outside())
+        // .addBefore(base.getId("A1".AsHaxeString()), null);
 
-        roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("A1".AsHaxeString()), null);
+        // roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
+        // .addFlag(new RoomFlag.Outside())
+        // .addBefore(base.getId("A1".AsHaxeString()), null);
 
         roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
         .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
+        .addFlag(new RoomFlag.Holes())
+        .setConstraint(new LinkConstraint.LeftOnly())
+        .addBefore(base.getId("A2".AsHaxeString()), null);
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
+        .addFlag(new RoomFlag.Outside())
+        .addFlag(new RoomFlag.Holes())
+        .setConstraint(new LinkConstraint.LeftOnly())
+        .addBefore(base.getId("A2".AsHaxeString()), null);
+
+        roomNode = base.createNode("CursedTreasure".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addFlag(new RoomFlag.Holes())
+        .setConstraint(new LinkConstraint.LeftOnly())
+        .addBefore(base.getId("A2".AsHaxeString()), null);
+
+
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, "B1".AsHaxeString())
+       .addFlag(new RoomFlag.Outside())
+       .addFlag(new RoomFlag.Holes())
+       .setConstraint(new LinkConstraint.DownOnly())
+       .addBefore(base.getId("A2".AsHaxeString()), null);
+
+
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addFlag(new RoomFlag.Holes())
+        .setConstraint(new LinkConstraint.DownOnly())
+        .addZChild(base.getId("B1".AsHaxeString()), null);
+
+        roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+        .addFlag(new RoomFlag.Outside())
+        .addFlag(new RoomFlag.Holes())
+        .setConstraint(new LinkConstraint.DownOnly())
+        .addAfter(base.getId("B1".AsHaxeString()), null);
 
         roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
         .addFlag(new RoomFlag.Outside())
@@ -173,5 +229,7 @@ public class Out_Clock : LevelStruct
         .addFlag(new RoomFlag.Outside())
         .addBefore(base.getId("B1".AsHaxeString()), null);
     }
+
+
 }
 
