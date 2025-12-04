@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Delete-NewsPanel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7a259ad7959cecce0ffd2e1f464af101809026c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdd7b8396b223184003f81c213094cc8d304077b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Delete-NewsPanel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Delete-NewsPanel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

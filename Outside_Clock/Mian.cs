@@ -16,6 +16,14 @@ using dc.h2d;
 using dc.level.@struct;
 using dc.tool;
 using dc.en;
+using dc.pr;
+using dc.cine;
+using dc.en.inter;
+using System.Data.Common;
+using dc.libs.misc;
+using System.ComponentModel;
+using HashlinkNET.Bytecode;
+using Hashlink;
 
 namespace Outside_Clock
 {
@@ -36,6 +44,40 @@ namespace Outside_Clock
 
             Hook_T_SewerShort.buildMainRooms += Hook_T_SewerShort_buildMainRooms;
 
+            Hook_Level.attachSpecialEquipments += hook_Level_attachSpecialEquipments;
+
+            Hook_LevelTransition.entranceWalk += Hook_LevelTransition_entranceWalk;
+
+        }
+
+        private void Hook_LevelTransition_entranceWalk(Hook_LevelTransition.orig_entranceWalk orig, LevelTransition self, int xFrom, int xTo, Exit exit)
+        {
+            virtual_exit_from_to_ virtual_exit_from_to_ = new virtual_exit_from_to_();
+            virtual_exit_from_to_.from = xFrom;
+            virtual_exit_from_to_.to = xTo;
+            virtual_exit_from_to_.exit = exit;
+            self.walk = virtual_exit_from_to_;
+
+        }
+
+        private void hook_Level_attachSpecialEquipments(Hook_Level.orig_attachSpecialEquipments orig, Level self, Room rseed, Rand cineTrans, LevelTransition pt)
+        {
+            bool found = true;
+            Marker marker = rseed.getMarker("SpecialEquipment".AsHaxeString(), null, new Ref<bool>(ref found));
+
+            if (marker?.customId?.ToString() == "tower")
+            {
+                Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
+                int num11 = rseed.x + marker.cx;
+                int num12 = self.lastHeroCX;
+                pt.entranceWalk(num11, num12, null);
+                hero.say("门终于开了".AsHaxeString(), 1, hero.cx, hero.cy);
+
+            }
+            else
+            {
+                orig(self, rseed, cineTrans, pt);
+            }
         }
 
         private RoomNode Hook_T_SewerShort_buildMainRooms(Hook_T_SewerShort.orig_buildMainRooms orig, T_SewerShort self)

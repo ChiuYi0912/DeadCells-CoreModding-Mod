@@ -24,7 +24,7 @@ public class Out_Clock : LevelStruct
 
     public override RoomNode buildMainRooms()
     {
-
+        #region 入口
         RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
         entranceNode.addFlag(new RoomFlag.NoExitSizeCheck());
         entranceNode.setConstraint(new LinkConstraint.RightOnly());
@@ -36,38 +36,46 @@ public class Out_Clock : LevelStruct
 
 
         entranceNode.addGenData(clockTowerGenData);
+        #endregion
 
 
+
+        #region 入口向右连接
         RoomNode combatNode = base.createNode(null, "OutsideTower4".AsHaxeString(), null, "A1".AsHaxeString())
             .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes());
 
         combatNode.set_parent(entranceNode);
+        #endregion
 
+
+
+
+        #region 入口后向上连接
         RoomNode up = base.createNode("Teleport".AsHaxeString(), null, null, "upOnly".AsHaxeString())
             .addFlag(new RoomFlag.Holes())
             .setConstraint(new LinkConstraint.UpOnly());
 
 
         up.set_parent(entranceNode);
+        #endregion
 
 
-        RoomNode combatNode2 = base.createNode("Teleport".AsHaxeString(), null, null, null)
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
-            .setConstraint(new LinkConstraint.LeftOnly());
 
-        combatNode2.set_parent(entranceNode);
 
+        #region 入口后向左连接
         RoomNode combatNode1 = base.createNode("Teleport".AsHaxeString(), null, null, "A2".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes())
             .setConstraint(new LinkConstraint.LeftOnly());
 
-        combatNode1.set_parent(combatNode2);
+        combatNode1.set_parent(entranceNode);
+        #endregion
 
 
 
 
+
+        #region 入口向右连接（暂留）
         RoomNode demonNode = base.createNode(null, "OutsideCross1".AsHaxeString(), null, "exit".AsHaxeString())
             .addFlag(new RoomFlag.Outside())
             .addFlag(new RoomFlag.Holes())
@@ -94,19 +102,30 @@ public class Out_Clock : LevelStruct
             .addNpc(new NpcId.Knight());
 
         knightNode.set_parent(demonNode);
+        #endregion
 
+
+
+
+
+        #region 出口前向上连接
         RoomNode knightNode1 = base.createNode("Teleport".AsHaxeString(), null, null, "up2".AsHaxeString())
-           .addFlag(new RoomFlag.Holes())
+            .addFlag(new RoomFlag.Holes())
             .setConstraint(new LinkConstraint.UpOnly());
 
         knightNode1.set_parent(knightNode);
+        #endregion
 
 
 
+
+        #region 出口
         RoomNode exitNode = base.createExit("T_PrisonCorrupt".AsHaxeString(), "RoofEndExit".AsHaxeString(), null, "end".AsHaxeString())
         .addFlag(new RoomFlag.Outside())
         .addFlag(new RoomFlag.Holes());
         exitNode.set_parent(knightNode);
+        #endregion
+
 
 
         return base.nodes.get("start".AsHaxeString());
@@ -117,6 +136,7 @@ public class Out_Clock : LevelStruct
 
     }
 
+    #region 约束配置
     public override void finalize()
     {
         // int num = 0;
@@ -158,12 +178,15 @@ public class Out_Clock : LevelStruct
 
 
     }
+    #endregion
+
+
 
     public override void buildSecondaryRooms()
     {
         base.buildSecondaryRooms();
 
-
+        #region 配置
         dc.String exitId = "exit".AsHaxeString();
         dc.String upOnlyId = "upOnly".AsHaxeString();
         dc.String a2Id = "A2".AsHaxeString();
@@ -175,100 +198,19 @@ public class Out_Clock : LevelStruct
         RoomNode a2Node = base.getId(a2Id);
         RoomNode b1Node = base.getId(b1Id);
         RoomNode up2Node = base.getId(up2id);
+        #endregion
 
+
+
+
+        #region 出口前支线
         RoomNode roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
             .addFlag(new RoomFlag.Outside())
             .addBefore(exitNode, null);
 
-        List<RoomNode> roomList = new List<RoomNode>();
-        int i = 0;
-        for (; ; )
-        {
-            if (i >= 3) break;
-            i++;
-            RoomNode roomNodebetween = base.createNode("Combat".AsHaxeString(), null, null, null)
-            .setConstraint(new LinkConstraint.UpOnly())
-            .addBefore(upOnlyNode, null);
-
-            roomList.Add(roomNodebetween);
-
-
-            RoomNode roomNodebetween2 = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
-            .setConstraint(new LinkConstraint.UpOnly())
-            .addBefore(upOnlyNode, null);
-
-            roomList.Add(roomNodebetween2);
-        }
-
-
-
-
-
-        i = 0;
-        for (; ; )
-        {
-            if (i >= 3) break;
-            i++;
-            roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
-            .setConstraint(new LinkConstraint.UpOnly())
-            .addBefore(up2Node, null);
-
-            roomNode = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
-            .setConstraint(new LinkConstraint.UpOnly())
-            .addBefore(up2Node, null);
-        }
-
-
-        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
-            .setConstraint(new LinkConstraint.All());
-
-
-
-
-
-        i = 0;
-        for (; ; )
-        {
-            if (i >= 2) break;
-            i++;
-
-            roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
-                .addFlag(new RoomFlag.Outside())
-                .addFlag(new RoomFlag.Holes())
-                .setConstraint(new LinkConstraint.LeftOnly())
-                .addBefore(a2Node, null);
-        }
-
-
-        roomNode = base.createNode("CursedTreasure".AsHaxeString(), null, null, null)
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
-            .setConstraint(new LinkConstraint.LeftOnly())
-            .addBefore(a2Node, null);
-
-
-        roomNode = base.createNode("Combat".AsHaxeString(), null, null, b1Id)
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
-            .setConstraint(new LinkConstraint.DownOnly())
-            .addBefore(a2Node, null);
-
-
-        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
-            .setConstraint(new LinkConstraint.DownOnly())
-            .addZChild(b1Node, null);
-
-        roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
-            .setConstraint(new LinkConstraint.DownOnly())
-            .addAfter(b1Node, null);
-
 
         int[] exitCombatData = new int[] { 69, 1, 7 };
-        i = 0;
+        int i = 0;
         for (; ; )
         {
             if (i >= exitCombatData.Length) break;
@@ -284,6 +226,121 @@ public class Out_Clock : LevelStruct
         roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
             .AddFlags(new RoomFlag.Outside())
             .addBefore(exitNode, null);
+        #endregion
+
+
+
+
+        #region 入口向上连接支线
+        List<RoomNode> roomList = new List<RoomNode>();
+        i = 0;
+        for (; ; )
+        {
+            if (i >= 3) break;
+            i++;
+
+            RoomNode roomNodebetween1 = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(upOnlyNode, null);
+            roomList.Add(roomNodebetween1);
+
+            RoomNode roomNodebetween = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(upOnlyNode, null);
+
+            roomList.Add(roomNodebetween);
+
+
+            RoomNode roomNodebetween2 = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(upOnlyNode, null);
+
+            roomList.Add(roomNodebetween2);
+        }
+
+
+        #endregion
+
+
+
+
+        #region 出口前向上
+        i = 0;
+        for (; ; )
+        {
+            if (i >= 3) break;
+            i++;
+            roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(up2Node, null);
+
+            roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(up2Node, null);
+
+            roomNode = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(up2Node, null);
+        }
+        #endregion
+
+
+
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.All());
+
+
+
+
+
+        #region 左连接支线
+        int[] a2NodeLeftOnly = new int[] { 2, 1, 1 };
+        i = 0;
+        for (; ; )
+        {
+            if (i >= a2NodeLeftOnly.Length) break;
+            int data = a2NodeLeftOnly[i];
+            i++;
+
+            roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.LeftOnly())
+            .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
+
+            .addBefore(a2Node, null);
+
+            roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+                .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
+                .setConstraint(new LinkConstraint.LeftOnly())
+
+                .addBefore(a2Node, null);
+        }
+
+        roomNode = base.createNode("CursedTreasure".AsHaxeString(), null, null, null)
+            .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.LeftOnly())
+            .addBefore(a2Node, null);
+
+        #endregion
+
+
+
+
+        #region 地下连接支线
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.DownOnly())
+            .addZChild(b1Node, null);
+
+        roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.DownOnly())
+            .addAfter(b1Node, null);
+        #endregion
+
+
 
 
     }
