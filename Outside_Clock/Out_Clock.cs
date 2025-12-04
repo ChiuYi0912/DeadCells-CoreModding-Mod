@@ -26,9 +26,7 @@ public class Out_Clock : LevelStruct
     {
 
         RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
-        entranceNode.addFlag(new RoomFlag.Outside());
         entranceNode.addFlag(new RoomFlag.NoExitSizeCheck());
-        entranceNode.addFlag(new RoomFlag.Holes());
         entranceNode.setConstraint(new LinkConstraint.RightOnly());
 
         var forcedBiome = "ClockTower".AsHaxeString();
@@ -41,10 +39,16 @@ public class Out_Clock : LevelStruct
 
 
         RoomNode combatNode = base.createNode(null, "OutsideTower4".AsHaxeString(), null, "A1".AsHaxeString())
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes());
+            .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes());
 
         combatNode.set_parent(entranceNode);
+
+        RoomNode up = base.createNode("Teleport".AsHaxeString(), null, null, "upOnly".AsHaxeString())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.UpOnly());
+
+
+        up.set_parent(entranceNode);
 
 
         RoomNode combatNode2 = base.createNode("Teleport".AsHaxeString(), null, null, null)
@@ -86,15 +90,16 @@ public class Out_Clock : LevelStruct
         demonNode2.set_parent(demonNode1);
 
 
-        RoomNode knightNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
-            .addFlag(new RoomFlag.DarkRoom())
-            .addFlag(new RoomFlag.Outside())
-            .addFlag(new RoomFlag.Holes())
+        RoomNode knightNode = base.createNode("Combat".AsHaxeString(), null, null, null)
             .addNpc(new NpcId.Knight());
-
 
         knightNode.set_parent(demonNode);
 
+        RoomNode knightNode1 = base.createNode("Teleport".AsHaxeString(), null, null, "up2".AsHaxeString())
+           .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.UpOnly());
+
+        knightNode1.set_parent(knightNode);
 
 
 
@@ -114,42 +119,42 @@ public class Out_Clock : LevelStruct
 
     public override void finalize()
     {
-        int num = 0;
-        ArrayObj all = base.all;
-        for (; ; )
-        {
-            int length = all.length;
-            if (num >= length)
-            {
-                break;
-            }
-            length = all.length;
-            RoomNode? roomNode;
-            if (num >= length)
-            {
-                roomNode = null;
-            }
-            else
-            {
+        // int num = 0;
+        // ArrayObj all = base.all;
+        // for (; ; )
+        // {
+        //     int length = all.length;
+        //     if (num >= length)
+        //     {
+        //         break;
+        //     }
+        //     length = all.length;
+        //     RoomNode? roomNode;
+        //     if (num >= length)
+        //     {
+        //         roomNode = null;
+        //     }
+        //     else
+        //     {
 
-                roomNode = all.array[num] as RoomNode;
-            }
-            num++;
-            if (roomNode != null && roomNode.parent != null)
-            {
-                if ((roomNode.flags & 8) != 0)
-                {
-                    roomNode.childPriority = 1;
+        //         roomNode = all.array[num] as RoomNode;
+        //     }
+        //     num++;
+        //     if (roomNode != null && roomNode.parent != null)
+        //     {
+        //         if ((roomNode.flags & 8) != 0)
+        //         {
+        //             roomNode.childPriority = 1;
 
-                    RoomNode roomNode2 = roomNode.setConstraint(new LinkConstraint.NeverUp());
-                }
-                else if ((roomNode.parent.flags & 8) != 0)
-                {
+        //             RoomNode roomNode2 = roomNode.setConstraint(new LinkConstraint.NeverUp());
+        //         }
+        //         else if ((roomNode.parent.flags & 8) != 0)
+        //         {
 
-                    RoomNode roomNode2 = roomNode.setConstraint(new LinkConstraint.NeverUp());
-                }
-            }
-        }
+        //             RoomNode roomNode2 = roomNode.setConstraint(new LinkConstraint.NeverUp());
+        //         }
+        //     }
+        // }
 
 
     }
@@ -157,79 +162,130 @@ public class Out_Clock : LevelStruct
     public override void buildSecondaryRooms()
     {
         base.buildSecondaryRooms();
+
+
+        dc.String exitId = "exit".AsHaxeString();
+        dc.String upOnlyId = "upOnly".AsHaxeString();
+        dc.String a2Id = "A2".AsHaxeString();
+        dc.String b1Id = "B1".AsHaxeString();
+        dc.String up2id = "up2".AsHaxeString();
+
+        RoomNode exitNode = base.getId(exitId);
+        RoomNode upOnlyNode = base.getId(upOnlyId);
+        RoomNode a2Node = base.getId(a2Id);
+        RoomNode b1Node = base.getId(b1Id);
+        RoomNode up2Node = base.getId(up2id);
+
         RoomNode roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
+            .addFlag(new RoomFlag.Outside())
+            .addBefore(exitNode, null);
 
-        // roomNode = base.createNode(null, "Combat".AsHaxeString(), null, null)
-        // .addFlag(new RoomFlag.Outside())
-        // .addBefore(base.getId("A1".AsHaxeString()), null);
+        List<RoomNode> roomList = new List<RoomNode>();
+        int i = 0;
+        for (; ; )
+        {
+            if (i >= 3) break;
+            i++;
+            RoomNode roomNodebetween = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(upOnlyNode, null);
 
-        // roomNode = base.createNode(null, "RoofSpacer1".AsHaxeString(), null, null)
-        // .addFlag(new RoomFlag.Outside())
-        // .addBefore(base.getId("A1".AsHaxeString()), null);
+            roomList.Add(roomNodebetween);
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
-        .addFlag(new RoomFlag.Outside())
-        .addFlag(new RoomFlag.Holes())
-        .setConstraint(new LinkConstraint.LeftOnly())
-        .addBefore(base.getId("A2".AsHaxeString()), null);
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
-        .addFlag(new RoomFlag.Outside())
-        .addFlag(new RoomFlag.Holes())
-        .setConstraint(new LinkConstraint.LeftOnly())
-        .addBefore(base.getId("A2".AsHaxeString()), null);
+            RoomNode roomNodebetween2 = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(upOnlyNode, null);
 
-        roomNode = base.createNode("CursedTreasure".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addFlag(new RoomFlag.Holes())
-        .setConstraint(new LinkConstraint.LeftOnly())
-        .addBefore(base.getId("A2".AsHaxeString()), null);
+            roomList.Add(roomNodebetween2);
+        }
 
 
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, null, "B1".AsHaxeString())
-       .addFlag(new RoomFlag.Outside())
-       .addFlag(new RoomFlag.Holes())
-       .setConstraint(new LinkConstraint.DownOnly())
-       .addBefore(base.getId("A2".AsHaxeString()), null);
 
+
+        i = 0;
+        for (; ; )
+        {
+            if (i >= 3) break;
+            i++;
+            roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(up2Node, null);
+
+            roomNode = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .setConstraint(new LinkConstraint.UpOnly())
+            .addBefore(up2Node, null);
+        }
 
 
         roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addFlag(new RoomFlag.Holes())
-        .setConstraint(new LinkConstraint.DownOnly())
-        .addZChild(base.getId("B1".AsHaxeString()), null);
+            .setConstraint(new LinkConstraint.All());
+
+
+
+
+
+        i = 0;
+        for (; ; )
+        {
+            if (i >= 2) break;
+            i++;
+
+            roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
+                .addFlag(new RoomFlag.Outside())
+                .addFlag(new RoomFlag.Holes())
+                .setConstraint(new LinkConstraint.LeftOnly())
+                .addBefore(a2Node, null);
+        }
+
+
+        roomNode = base.createNode("CursedTreasure".AsHaxeString(), null, null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.LeftOnly())
+            .addBefore(a2Node, null);
+
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, b1Id)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.DownOnly())
+            .addBefore(a2Node, null);
+
+
+        roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.DownOnly())
+            .addZChild(b1Node, null);
 
         roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addFlag(new RoomFlag.Holes())
-        .setConstraint(new LinkConstraint.DownOnly())
-        .addAfter(base.getId("B1".AsHaxeString()), null);
+            .addFlag(new RoomFlag.Outside())
+            .addFlag(new RoomFlag.Holes())
+            .setConstraint(new LinkConstraint.DownOnly())
+            .addAfter(b1Node, null);
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 69, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 1, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
+        int[] exitCombatData = new int[] { 69, 1, 7 };
+        i = 0;
+        for (; ; )
+        {
+            if (i >= exitCombatData.Length) break;
+            int data = exitCombatData[i];
+            i++;
 
-        roomNode = base.createNode("Combat".AsHaxeString(), null, 7, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
+            roomNode = base.createNode("Combat".AsHaxeString(), null, data, null)
+                .addFlag(new RoomFlag.Outside())
+                .addBefore(exitNode, null);
+        }
+
 
         roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("exit".AsHaxeString()), null);
+            .AddFlags(new RoomFlag.Outside())
+            .addBefore(exitNode, null);
 
-        roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
-        .addFlag(new RoomFlag.Outside())
-        .addBefore(base.getId("B1".AsHaxeString()), null);
+
     }
-
-
 }
 
