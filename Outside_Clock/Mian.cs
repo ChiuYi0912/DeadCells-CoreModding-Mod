@@ -48,6 +48,7 @@ namespace Outside_Clock
 
             Hook_LevelTransition.entranceWalk += Hook_LevelTransition_entranceWalk;
 
+
         }
 
         private void Hook_LevelTransition_entranceWalk(Hook_LevelTransition.orig_entranceWalk orig, LevelTransition self, int xFrom, int xTo, Exit exit)

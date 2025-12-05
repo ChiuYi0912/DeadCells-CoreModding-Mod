@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FxMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdd7b8396b223184003f81c213094cc8d304077b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e7dae115a3f5bd87866a2daf2eeec5dfa33f7e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FxMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FxMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
