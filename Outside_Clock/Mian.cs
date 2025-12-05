@@ -24,6 +24,7 @@ using dc.libs.misc;
 using System.ComponentModel;
 using HashlinkNET.Bytecode;
 using Hashlink;
+using dc.cdb;
 
 namespace Outside_Clock
 {
@@ -63,23 +64,64 @@ namespace Outside_Clock
 
         private void hook_Level_attachSpecialEquipments(Hook_Level.orig_attachSpecialEquipments orig, Level self, Room rseed, Rand cineTrans, LevelTransition pt)
         {
-            bool found = true;
-            Marker marker = rseed.getMarker("SpecialEquipment".AsHaxeString(), null, new Ref<bool>(ref found));
 
-            if (marker?.customId?.ToString() == "tower")
+            orig(self, rseed, cineTrans, pt);
+            if (rseed == null) return;
+            dc.String rtype = rseed.rType;
+            if (@rtype != null)
             {
-                Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
-                int num11 = rseed.x + marker.cx;
-                int num12 = self.lastHeroCX;
-                pt.entranceWalk(num11, num12, null);
-                hero.say("门终于开了".AsHaxeString(), 1, hero.cx, hero.cy);
+                if (rseed != null)
+                {
+                    Marker? marker = null;
 
-            }
-            else
-            {
-                orig(self, rseed, cineTrans, pt);
+                    if (marker == null)
+                    {
+                        try
+                        {
+                            bool found = true;
+                            marker = rseed.getMarker("SpecialEquipment".AsHaxeString(), null, new Ref<bool>(ref found));
+                            Logger.Debug("maker:不为空");
+                        }
+                        catch
+                        {
+
+                            Logger.Debug("majer:为空");
+                        }
+
+                        if (marker != null)
+                        {
+                            if (marker.customId?.ToString() == "tower".ToString())
+                            {
+                                Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
+                                int walkxy = rseed.x + marker.cx;
+                                int roomxy = self.lastHeroCX;
+                                pt.entranceWalk(walkxy, roomxy, null);
+                                //hero.say("门终于开了".AsHaxeString(), 1, hero.cx, hero.cy);
+                                Logger.Debug("接管:tower");
+                                // set the room's y and the hero's cy to 31
+
+                                // if (hero != null && rseed != null)
+                                // {
+                                //     GameCinematic cm = new GameCinematic();
+                                //     cm.init();
+                                //     cm.update();
+                                //     HlAction hlAction = new HlAction(() =>
+                                //     {
+                                //         hero.spr.get_anim().play("travolta".AsHaxeString(), null, null).loop(1);
+                                //     });
+                                //     cm.cm.__beginNewQueue();
+                                //     cm.cm.__add(hlAction, 1000, null);
+
+
+                                // }
+                            }
+
+                        }
+                    }
+                }
             }
         }
+
 
         private RoomNode Hook_T_SewerShort_buildMainRooms(Hook_T_SewerShort.orig_buildMainRooms orig, T_SewerShort self)
         {

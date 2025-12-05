@@ -9,7 +9,6 @@ namespace Outside_Clock;
 public class EntrancOut_Clock : GameCinematic
 {
 
-
     public override void init()
     {
         base.init();

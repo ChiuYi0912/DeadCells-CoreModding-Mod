@@ -11,6 +11,7 @@ using Hashlink.Virtuals;
 using ModCore.Utitities;
 using Serilog;
 using Serilog.Debugging;
+using Log = Serilog.Log;
 
 namespace Outside_Clock;
 
@@ -26,7 +27,7 @@ public class Out_Clock : LevelStruct
     {
         #region 入口
         RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
-        entranceNode.addFlag(new RoomFlag.NoExitSizeCheck());
+        entranceNode.AddFlags(new RoomFlag.NoExitSizeCheck(), new RoomFlag.Outside());
         entranceNode.setConstraint(new LinkConstraint.RightOnly());
 
         var forcedBiome = "ClockTower".AsHaxeString();
@@ -110,7 +111,7 @@ public class Out_Clock : LevelStruct
 
         #region 出口前向上连接
         RoomNode knightNode1 = base.createNode("Teleport".AsHaxeString(), null, null, "up2".AsHaxeString())
-            .addFlag(new RoomFlag.Holes())
+            .AddFlags(new RoomFlag.Holes(), new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly());
 
         knightNode1.set_parent(knightNode);
@@ -209,7 +210,7 @@ public class Out_Clock : LevelStruct
             .addBefore(exitNode, null);
 
 
-        int[] exitCombatData = new int[] { 69, 1, 7 };
+        int[] exitCombatData = new int[] { 69, 1, 7, 3, 2, 6, 1 };
         int i = 0;
         for (; ; )
         {
@@ -217,14 +218,18 @@ public class Out_Clock : LevelStruct
             int data = exitCombatData[i];
             i++;
 
+            roomNode = base.createNode(null, "TU_teleportSecret".AsHaxeString(), null, null)
+            .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
+                .addBefore(exitNode, null);
+
             roomNode = base.createNode("Combat".AsHaxeString(), null, data, null)
-                .addFlag(new RoomFlag.Outside())
+               .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
                 .addBefore(exitNode, null);
         }
 
 
         roomNode = base.createNode("Shop".AsHaxeString(), null, null, null)
-            .AddFlags(new RoomFlag.Outside())
+           .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
             .addBefore(exitNode, null);
         #endregion
 
@@ -240,11 +245,13 @@ public class Out_Clock : LevelStruct
             i++;
 
             RoomNode roomNodebetween1 = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(upOnlyNode, null);
             roomList.Add(roomNodebetween1);
 
             RoomNode roomNodebetween = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(upOnlyNode, null);
 
@@ -252,12 +259,19 @@ public class Out_Clock : LevelStruct
 
 
             RoomNode roomNodebetween2 = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(upOnlyNode, null);
 
             roomList.Add(roomNodebetween2);
         }
 
+        for (i = 0; i < roomList.Count; i++)
+        {
+            RoomNode current = roomList[i];
+            var LevelLogos = current.ToString();
+            Log.Debug("入口向上的房间数组:{LevelLogos}", LevelLogos);
+        }
 
         #endregion
 
@@ -271,14 +285,17 @@ public class Out_Clock : LevelStruct
             if (i >= 3) break;
             i++;
             roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(up2Node, null);
 
             roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(up2Node, null);
 
             roomNode = base.createNode(null, "CT_VSpacer".AsHaxeString(), null, null)
+            .AddFlags(new RoomFlag.Outside())
             .setConstraint(new LinkConstraint.UpOnly())
             .addBefore(up2Node, null);
         }
@@ -295,7 +312,7 @@ public class Out_Clock : LevelStruct
 
 
         #region 左连接支线
-        int[] a2NodeLeftOnly = new int[] { 2, 1, 1 };
+        int[] a2NodeLeftOnly = new int[] { 93, 93, 93 };
         i = 0;
         for (; ; )
         {
@@ -303,13 +320,13 @@ public class Out_Clock : LevelStruct
             int data = a2NodeLeftOnly[i];
             i++;
 
-            roomNode = base.createNode("Teleport".AsHaxeString(), null, null, null)
+            roomNode = base.createNode(null, "TU_teleport0".AsHaxeString(), null, null)
             .setConstraint(new LinkConstraint.LeftOnly())
             .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
 
             .addBefore(a2Node, null);
 
-            roomNode = base.createNode("Combat".AsHaxeString(), null, null, null)
+            roomNode = base.createNode("Combat".AsHaxeString(), null, data, null)
                 .AddFlags(new RoomFlag.Outside(), new RoomFlag.Holes())
                 .setConstraint(new LinkConstraint.LeftOnly())
 

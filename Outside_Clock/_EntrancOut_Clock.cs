@@ -12,10 +12,9 @@ public class _EntrancOut_Clock
     {
 
 
-        _GameCinematic cinematic = GameCinematic.Class;
+        //_GameCinematic cinematic =new  _GameCinematic.;
 
-        cinematic.__type__.GetExport("__inst_construct__");
-        _EnterGiantRoom _EnterGiant = EnterGiantRoom.Class;
+
 
 
 
