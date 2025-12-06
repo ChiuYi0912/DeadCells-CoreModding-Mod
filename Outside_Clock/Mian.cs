@@ -27,12 +27,15 @@ using Hashlink;
 using dc.cdb;
 using dc.hxsl;
 using System.Security.Cryptography;
+using ModCore.Storage;
 
 namespace Outside_Clock
 {
     public class Mian : ModBase,
         IOnGameExit,
         IOnGameEndInit
+
+
     {
         public Mian(ModInfo info) : base(info)
         {
@@ -53,8 +56,10 @@ namespace Outside_Clock
 
             dc.pr.Hook_Level.init += Hook_Level_init;
 
+            Hook_HiddenTrigger.trigger += EntrancOut_Clock_heroAnim.Hook_HiddenTrigger_trigger;
 
-
+            FastBoolSerializer fast = new FastBoolSerializer();
+            fast.SetData(fast);
         }
 
 
@@ -200,5 +205,9 @@ namespace Outside_Clock
                default);
 
         }
+
+
     }
+
+
 }

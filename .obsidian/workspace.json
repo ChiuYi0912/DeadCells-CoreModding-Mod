@@ -185,6 +185,7 @@
   },
   "active": "d203d3094106fe38",
   "lastOpenFiles": [
+    "Outside_Clock/DataConfig.cs",
     "Outside_Clock/obj/Debug/net9.0/res.pak",
     "Outside_Clock/obj/Debug/net9.0/_diffCDB.pak",
     "Outside_Clock/obj/Debug/net9.0/modinfo.json",
@@ -195,7 +196,6 @@
     "Outside_Clock/obj/Debug/net9.0/Outside_Clock.csproj.CoreCompileInputs.cache",
     "Outside_Clock/obj/Debug/net9.0/Outside_Clock.AssemblyInfo.cs",
     "Outside_Clock/obj/Debug/net9.0/Outside_Clock.AssemblyInfoInputs.cache",
-    "Outside_Clock/obj/Debug/net9.0/Outside_Clock.GeneratedMSBuildEditorConfig.editorconfig",
     "A-Remote Viewing/clock/struct/struct.md",
     "A-Remote Viewing/LevelStruct/PrisonStart/struct.md",
     "A-Remote Viewing/LevelStruct/PrisonRoof/struct.md",
