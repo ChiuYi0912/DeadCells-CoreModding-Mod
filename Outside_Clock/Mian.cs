@@ -25,6 +25,8 @@ using System.ComponentModel;
 using HashlinkNET.Bytecode;
 using Hashlink;
 using dc.cdb;
+using dc.hxsl;
+using System.Security.Cryptography;
 
 namespace Outside_Clock
 {
@@ -48,6 +50,29 @@ namespace Outside_Clock
             Hook_Level.attachSpecialEquipments += hook_Level_attachSpecialEquipments;
 
             Hook_LevelTransition.entranceWalk += Hook_LevelTransition_entranceWalk;
+
+            dc.pr.Hook_Level.init += Hook_Level_init;
+
+
+
+        }
+
+
+
+        private void Hook_Level_init(Hook_Level.orig_init orig, Level self)
+        {
+            // dc.String id = self.map.biome.id;
+            // if (id != null)
+            // {
+            //     if (id.ToString() == "ClockTower")
+            //     {
+            //         var map = self.map;
+            //         bool a = true;
+            //         var lDisp2 = new dc.level.disp.Cliff(self, map, id, "Cliff_outside".AsHaxeString());
+
+            //     }
+            // }
+            orig(self);
 
 
         }
