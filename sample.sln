@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delete-NewsPanel", "Delete-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiuYiUI-zh", "UI-Mod\CiuYiUI-zh.csproj", "{A616F556-7EBE-42C4-80E4-3DE67F18E0B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomLevel", "RandomLevel\RandomLevel.csproj", "{EB389776-76AE-44CE-8224-97299C8E6413}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,18 @@ Global
 		{A616F556-7EBE-42C4-80E4-3DE67F18E0B8}.Release|x64.Build.0 = Release|Any CPU
 		{A616F556-7EBE-42C4-80E4-3DE67F18E0B8}.Release|x86.ActiveCfg = Release|Any CPU
 		{A616F556-7EBE-42C4-80E4-3DE67F18E0B8}.Release|x86.Build.0 = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|x64.Build.0 = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|x64.ActiveCfg = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|x64.Build.0 = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB389776-76AE-44CE-8224-97299C8E6413}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

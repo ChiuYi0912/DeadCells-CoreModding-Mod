@@ -9,7 +9,7 @@ using ModCore.Events.Interfaces.Game;
 using ModCore.Mods;
 using ModCore.Modules;
 using ModCore.Utitities;
-using HashlinkNET;
+//using HashlinkNET;
 using HaxeProxy.Runtime;
 using dc.achievements;
 using dc.h2d;
@@ -22,7 +22,7 @@ using dc.en.inter;
 using System.Data.Common;
 using dc.libs.misc;
 using System.ComponentModel;
-using HashlinkNET.Bytecode;
+//using HashlinkNET.Bytecode;
 using Hashlink;
 using dc.cdb;
 using dc.hxsl;
@@ -115,31 +115,30 @@ namespace Outside_Clock
 
                         if (marker != null)
                         {
-                            if (marker.customId?.ToString() == "tower".ToString())
-                            {
-                                Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
-                                int walkxy = rseed.x + marker.cx;
-                                int roomxy = self.lastHeroCX;
-                                pt.entranceWalk(walkxy, roomxy, null);
-                                //hero.say("门终于开了".AsHaxeString(), 1, hero.cx, hero.cy);
-                                Logger.Debug("接管:tower");
-                                // set the room's y and the hero's cy to 31
+                            // if (marker.customId?.ToString() == "tower".ToString())
+                            // {
+                            // Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
+                            // int walkxy = rseed.x + marker.cx;
+                            // int roomxy = self.lastHeroCX;
+                            // pt.entranceWalk(walkxy, roomxy, null);
+                            //hero.say("门终于开了".AsHaxeString(), 1, hero.cx, hero.cy);
+                            Logger.Debug("接管:tower");
+                            Hero hero = ModCore.Modules.Game.Instance.HeroInstance!;
+                            Outside_Clock.EntrancOut_Clock entrancOut_ = new Outside_Clock.EntrancOut_Clock(hero);
 
-                                // if (hero != null && rseed != null)
-                                // {
-                                //     GameCinematic cm = new GameCinematic();
-                                //     cm.init();
-                                //     cm.update();
-                                //     HlAction hlAction = new HlAction(() =>
-                                //     {
-                                //         hero.spr.get_anim().play("travolta".AsHaxeString(), null, null).loop(1);
-                                //     });
-                                //     cm.cm.__beginNewQueue();
-                                //     cm.cm.__add(hlAction, 1000, null);
-
-
-                                // }
-                            }
+                            // if (hero != null && rseed != null)
+                            // {
+                            //     GameCinematic cm = new GameCinematic();
+                            //     cm.init();
+                            //     cm.update();
+                            //     HlAction hlAction = new HlAction(() =>
+                            //     {
+                            //         hero.spr.get_anim().play("travolta".AsHaxeString(), null, null).loop(1);
+                            //     });
+                            //     cm.cm.__beginNewQueue();
+                            //     cm.cm.__add(hlAction, 1000, null);
+                            // }
+                            // }
 
                         }
                     }
