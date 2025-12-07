@@ -32,8 +32,8 @@ using ModCore.Storage;
 namespace Outside_Clock
 {
     public class Mian : ModBase,
-        IOnGameExit,
-        IOnGameEndInit
+        IOnGameEndInit,
+        IOnGameExit
 
 
     {
@@ -56,10 +56,7 @@ namespace Outside_Clock
 
             dc.pr.Hook_Level.init += Hook_Level_init;
 
-            Hook_HiddenTrigger.trigger += EntrancOut_Clock_heroAnim.Hook_HiddenTrigger_trigger;
-
-            FastBoolSerializer fast = new FastBoolSerializer();
-            fast.SetData(fast);
+            Hook_HiddenTrigger.trigger += CinematicOut_Clock_Main.Hook_HiddenTrigger_trigger;
         }
 
 
@@ -103,7 +100,6 @@ namespace Outside_Clock
                 if (rseed != null)
                 {
                     Marker? marker = null;
-
                     if (marker == null)
                     {
                         try
@@ -114,7 +110,6 @@ namespace Outside_Clock
                         }
                         catch
                         {
-
                             Logger.Debug("majer:为空");
                         }
 
@@ -190,10 +185,7 @@ namespace Outside_Clock
             else return orig(user, l, rng);
         }
 
-        void IOnGameExit.OnGameExit()
-        {
-            Logger.Information("游戏正在退出");
-        }
+
 
         void IOnGameEndInit.OnGameEndInit()
         {
@@ -205,9 +197,14 @@ namespace Outside_Clock
                default);
 
         }
+        private static Config<Out_Clock_Config> config { get; } = new("Out_Clock_Enter");
+        void IOnGameExit.OnGameExit()
+        {
 
+            config.Value.Out_Clock_Enter = false;
+            config.Save();
+            Logger.Debug("已初始化过场动画");
+        }
 
     }
-
-
 }

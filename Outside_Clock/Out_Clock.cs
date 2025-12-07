@@ -32,9 +32,9 @@ public class Out_Clock : LevelStruct
     {
 
         Rand rng = base.rng;
-        double num = rng.seed * 16807.0 % 2147483647.0;
-        rng.seed = num;
-        bool flag = ((int)num & 1073741823) % 100 < 70;
+        double randnumber = rng.seed * 16807.0 % 2147483647.0;
+        rng.seed = randnumber;
+        bool randbool = ((int)randnumber & 1073741823) % 100 < 70;
 
         #region 入口
         RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
@@ -82,11 +82,6 @@ public class Out_Clock : LevelStruct
 
 
         up.set_parent(entranceNode);
-
-
-
-
-
 
         #endregion
 
