@@ -23,4 +23,8 @@
     <GenerateSinglePakFile>false</GenerateSinglePakFile>
   </PropertyGroup>
 
+    <ItemGroup>
+    <PackAssets Include="assets/**/*" RootInPak="tiled" />
+  </ItemGroup>
+
 </Project>

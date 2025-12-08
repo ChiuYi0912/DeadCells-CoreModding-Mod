@@ -1,5 +1,9 @@
-﻿using dc;
+﻿using System.Runtime.CompilerServices;
+using dc;
+using dc.cdb;
 using dc.en;
+using dc.h3d.pass;
+using dc.haxe.ds;
 using dc.hl.types;
 using dc.level;
 using dc.level.@struct;
@@ -11,6 +15,7 @@ using ModCore.Events.Interfaces.Game;
 using ModCore.Mods;
 using ModCore.Storage;
 using ModCore.Utitities;
+using Serilog;
 
 namespace RandomLevel;
 
@@ -26,6 +31,13 @@ public class Main : ModBase
 
 
         Hook__LevelStruct.get += Hook_LevelStruct_get;
+        Hook_Level.init += Hook_Level_init;
+        //Hook_StringMap.get += Hook_StringMap_get;
+    }
+
+    private object Hook_StringMap_get(Hook_StringMap.orig_get orig, StringMap self, dc.String key)
+    {
+        return "Throne".AsHaxeString();
     }
 
     private static readonly List<string> allLevels = new List<string>
@@ -39,6 +51,170 @@ public class Main : ModBase
         "Shipwreck", "Lighthouse", "QueenArena", "Bank", "PurpleGarden",
         "DookuCastle", "DookuCastleHard", "DeathArena", "DookuArena"
     };
+
+    public void CreateLevelDisplay(Level self, dc.String randomLevelId)
+    {
+        var map = self.map;
+
+        if (randomLevelId == "PrisonCourtyard".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.PrisonCourtyard(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "SewerShort".AsHaxeString())
+        {
+            var biome = false;
+            self.lDisp = new dc.level.disp.Sewer(self, map, new Ref<bool>(ref biome));
+        }
+        else if (randomLevelId == "PrisonDepths".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Prison(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "PrisonCorrupt".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Prison(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "PrisonRoof".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.PrisonRoof(self, map);
+        }
+        else if (randomLevelId == "Ossuary".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Ossuary(self, map);
+        }
+        else if (randomLevelId == "SewerDepths".AsHaxeString())
+        {
+            var biome = true;
+            self.lDisp = new dc.level.disp.Sewer(self, map, new Ref<bool>(ref biome));
+        }
+        else if (randomLevelId == "Bridge".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Bridge(self, map);
+        }
+        else if (randomLevelId == "BeholderPit".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.BeholderPit(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "StiltVillage".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.StiltVillage(self, map);
+        }
+        else if (randomLevelId == "AncientTemple".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.AncientTemple(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Cemetery".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Cemetery(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "ClockTower".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.ClockTower(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Crypt".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Crypt(self, map);
+        }
+        else if (randomLevelId == "TopClockTower".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.TopClockTower(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Cavern".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Cavern(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Giant".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Cavern(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Castle".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Castle(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Distillery".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Distillery(self, map);
+        }
+        else if (randomLevelId == "Throne".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Throne(self, map);
+        }
+        else if (randomLevelId == "Astrolab".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Astrolab(self, map);
+        }
+        else if (randomLevelId == "Observatory".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Observatory(self, map);
+        }
+        else if (randomLevelId == "BoatDock".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Docks(self, map);
+        }
+        else if (randomLevelId == "Greenhouse".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Greenhouse(self, map, randomLevelId, "Greenhouse_underground".AsHaxeString());
+        }
+        else if (randomLevelId == "Swamp".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Swamp(self, map);
+        }
+        else if (randomLevelId == "SwampHeart".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.SwampHeart(self, map);
+        }
+        else if (randomLevelId == "Tumulus".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Tumulus(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Cliff".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Cliff(self, map, randomLevelId, "Cliff_outside".AsHaxeString());
+        }
+        else if (randomLevelId == "GardenerStage".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.GardenerStage(self, map, randomLevelId, "Gardener_outside".AsHaxeString());
+        }
+        else if (randomLevelId == "Shipwreck".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Shipwreck(self, map, randomLevelId, "Shipwreck_underground".AsHaxeString());
+        }
+        else if (randomLevelId == "Lighthouse".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Lighthouse(self, map, randomLevelId, "LighthouseTop".AsHaxeString());
+        }
+        else if (randomLevelId == "QueenArena".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.QueenArena(self, map, randomLevelId);
+        }
+        else if (randomLevelId == "Bank".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.Bank(self, map);
+        }
+        else if (randomLevelId == "PurpleGarden".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.PurpleGarden(self, map);
+        }
+        else if (randomLevelId == "DookuCastle".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.DookuCastle(self, map);
+        }
+        else if (randomLevelId == "DookuCastleHard".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.DookuCastle(self, map);
+        }
+        else if (randomLevelId == "DeathArena".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.DeathArena(self, map);
+        }
+        else if (randomLevelId == "DookuArena".AsHaxeString())
+        {
+            self.lDisp = new dc.level.disp.DookuArena(self, map, randomLevelId, "DookuBeastArena".AsHaxeString());
+        }
+        else
+        {
+            Logger.Error($"未知的关卡类型: {randomLevelId}");
+        }
+    }
 
 
     private LevelStruct CreateRandomLevelStruct(string levelId, User user, dynamic data, Rand rng)
@@ -89,6 +265,17 @@ public class Main : ModBase
 #pragma warning restore CS8603 
     }
 
+
+    public void randomMain(Level l, dc.String id)
+    {
+        this.CreateLevelDisplay(l, id);
+    }
+
+    private static List<string> availableLevels = allLevels.ToList();
+    public static Rand rng = new Rand(7);
+    private static int randomIndex = (rng.random(availableLevels.Count));
+    private static int getRand = randomIndex;
+    private static int initRand = getRand;
     private LevelStruct Hook_LevelStruct_get(Hook__LevelStruct.orig_get orig, User user, dynamic data, Rand rng)
     {
 
@@ -98,12 +285,10 @@ public class Main : ModBase
 
             if (allLevels.Contains(originalLevelId))
             {
-                List<string> availableLevels = allLevels.Where(l => l != originalLevelId).ToList();
-
                 if (availableLevels.Count > 0)
                 {
-                    int randomIndex = (int)(rng.random(availableLevels.Count));
                     string randomLevelId = availableLevels[randomIndex];
+
 
                     Logger.Information($"[随机关卡] {originalLevelId} -> {randomLevelId}");
 
@@ -117,5 +302,44 @@ public class Main : ModBase
             }
         }
         return orig(user, data, rng);
+    }
+
+    private void Hook_Level_init(Hook_Level.orig_init orig, Level self)
+    {
+
+        orig(self);
+        var id = self.map.biome.id;
+        if (id != null)
+        {
+            Log.Debug("id:{id}不为空", id);
+            string idStr = id.ToString();
+            string randomLevelId = availableLevels[randomIndex];
+            Log.Debug("随机关卡为：{randomLevelId}", randomLevelId);
+            _LevelStruct _LevelStruct = LevelStruct.Class;
+            var mapid = _LevelStruct.get.ToString();
+
+            Log.Debug("当前的关卡id{mapid}", mapid);
+            if (allLevels.Contains(randomLevelId))
+            {
+                try
+                {
+                    CreateLevelDisplay(self, randomLevelId.AsHaxeString());
+                    Logger.Information($"在Hook_Level_init中创建关卡显示: {idStr} -> {randomLevelId}");
+                    var forcedBiome = "ClockTower".AsHaxeString();
+                    var virtual_add = new virtual_specificBiome_();
+                    virtual_add.specificBiome = forcedBiome;
+                    var virtual1 = Data.Class.level.byId.ToVirtual<virtual_baseLootLevel_biome_bonusTripleScrollAfterBC_cellBonus_dlc_doubleUps_eliteRoomChance_eliteWanderChance_flagsProps_group_icon_id_index_loreDescriptions_mapDepth_minGold_mobDensity_mobs_name_nextLevels_parallax_props_quarterUpsBC3_quarterUpsBC4_specificLoots_specificSubBiome_transitionTo_tripleUps_worldDepth_>();
+
+                    var clockTowerGenData = virtual_add.ToVirtual<virtual_altarItemGroup_brLegendaryMultiTreasure_broken_cells_doorCost_doorCurse_flaskRefill_forcedMerchantType_forcePauseTimer_isCliffPath_itemInWall_itemLevelBonus_killsMultiTreasure_locked_maxPerks_mins_noHealingShop_shouldBeFlipped_specificBiome_subTeleportTo_timedMultiTreasure_zDoorLock_zDoorType_>();
+                    _Data data = Data.Class;
+                    var gatdataid = data.level.byId.get(self.map.id);
+
+                }
+                catch (Exception ex)
+                {
+                    Logger.Error($"创建关卡显示失败: {ex.Message}");
+                }
+            }
+        }
     }
 }
