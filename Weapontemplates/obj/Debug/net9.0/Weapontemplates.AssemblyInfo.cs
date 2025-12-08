@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Weapontemplates")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af1c7d1d389f7caffd347cf42116f7b3538ee78e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3055207f56b013fd5c9bac5e002d74f9d5f0e32")]
 [assembly: System.Reflection.AssemblyProductAttribute("Weapontemplates")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Weapontemplates")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

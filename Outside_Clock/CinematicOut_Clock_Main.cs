@@ -31,7 +31,7 @@ public class CinematicOut_Clock_Main : IOnGameInit
                 Log.Debug("genericEventId不为空");
                 if (self.genericEventId.ToString() == "ow111")
                 {
-                    EntrancOut_Clock entrancOut_ = new EntrancOut_Clock(owen);
+
                     Log.Debug("获取到ow");
                     Out_Clock_Enter_save.Value.Out_Clock_Enter = true;
                     Out_Clock_Enter_save.Save();
@@ -46,7 +46,7 @@ public class CinematicOut_Clock_Main : IOnGameInit
                 {
                     if (self.genericEventId.ToString() == "ow2")
                     {
-                        EnterTimeKeeperRoomFirst enterTimeKeeperRoomFirst = new EnterTimeKeeperRoomFirst((Hero)dh);
+
                         Log.Debug("获取到ow");
                     }
                     a = true;

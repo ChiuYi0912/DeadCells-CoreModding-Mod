@@ -16,6 +16,7 @@ using Hashlink.Virtuals;
 using ModCore.Utitities;
 using dc.libs.misc;
 using dc.h3d.shader;
+using dc.h3d.pass;
 
 namespace Kaguya
 {
@@ -27,10 +28,9 @@ namespace Kaguya
 
         public override bool onExecute()
         {
-            _Data cdb = Data.Class;
-            dynamic cdb_ = cdb.skin.all.array.getDyn(44);
-            dynamic up1 = cdb_.scarfs.getDyn(0);
-            Log.Debug("输出{up1}", up1);
+            var hero = base.owner;
+            Outside_Clock.Clock_Mobs.miniLeapingDuelyst miniLeapingDuelyst = new Outside_Clock.Clock_Mobs.miniLeapingDuelyst(hero._level, hero.cx, hero.cy, 10, 10);
+            miniLeapingDuelyst.init();
             return base.onExecute();
         }
 

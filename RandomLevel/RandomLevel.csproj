@@ -17,10 +17,6 @@
     <PackageReference Include="DeadCellsCoreModding.MDK" Version="1.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Outside_Clock\Outside_Clock.csproj" />
-  </ItemGroup>
-
   <PropertyGroup>
     <GenerateDiffCDB>false</GenerateDiffCDB>
     <GameVersion>35</GameVersion>

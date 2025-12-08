@@ -43,20 +43,6 @@
           "build/DeadCellsCoreModding.MDK.props": {},
           "build/DeadCellsCoreModding.MDK.targets": {}
         }
-      },
-      "Outside_Clock/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "dependencies": {
-          "AWSSDK.DynamoDBv2": "4.0.6.2",
-          "DeadCellsCoreModding.MDK": "1.0.1"
-        },
-        "compile": {
-          "bin/placeholder/Outside_Clock.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Outside_Clock.dll": {}
-        }
       }
     }
   },
@@ -128,18 +114,12 @@
         "deadcellscoremodding.mdk.nuspec",
         "lib/netstandard2.0/DeadCellsCoreModding.MDK.dll"
       ]
-    },
-    "Outside_Clock/1.0.0": {
-      "type": "project",
-      "path": "../Outside_Clock/Outside_Clock.csproj",
-      "msbuildProject": "../Outside_Clock/Outside_Clock.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "AWSSDK.DynamoDBv2 >= 4.0.6.2",
-      "DeadCellsCoreModding.MDK >= 1.0.1",
-      "Outside_Clock >= 1.0.0"
+      "DeadCellsCoreModding.MDK >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -174,11 +154,7 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {
-            "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Outside_Clock\\Outside_Clock.csproj": {
-              "projectPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Outside_Clock\\Outside_Clock.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
