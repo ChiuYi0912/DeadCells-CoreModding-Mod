@@ -10,3 +10,9 @@ F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.dll
 F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\refint\EnemiesVsEnemies.dll
 F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.pdb
 F:\HKLab\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\ref\EnemiesVsEnemies.dll
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.csproj.AssemblyReference.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.AssemblyInfoInputs.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.AssemblyInfo.cs
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.csproj.CoreCompileInputs.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\EnemiesVsEnemies\EnemiesVsEnemies\obj\Debug\net9.0\EnemiesVsEnemies.sourcelink.json

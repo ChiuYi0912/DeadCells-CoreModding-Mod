@@ -1,7 +1,19 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Adeadcellsmod\\core-main\\sample\\",
+  "WorkspaceRootPath": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\",
   "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB389776-76AE-44CE-8224-97299C8E6413}|RandomLevel\\RandomLevel.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\randomlevel\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB389776-76AE-44CE-8224-97299C8E6413}|RandomLevel\\RandomLevel.csproj|solutionrelative:randomlevel\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3EBCD3-FE43-4CF5-8CA7-808B9BC976DD}|RainMod\\RainMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\rainmod\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B3EBCD3-FE43-4CF5-8CA7-808B9BC976DD}|RainMod\\RainMod.csproj|solutionrelative:rainmod\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B3EBCD3-FE43-4CF5-8CA7-808B9BC976DD}|RainMod\\RainMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\rainmod\\rainmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B3EBCD3-FE43-4CF5-8CA7-808B9BC976DD}|RainMod\\RainMod.csproj|solutionrelative:rainmod\\rainmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_QueenRapier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,8 +57,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\steam\\steamapps\\common\\Dead Cells\\coremod\\mods\\EnemiesVsEnemies\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\bin\\Simple\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\Simple\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\bin\\Simple\\modinfo.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\ModTool\\TmxTool\\tiled1\\objecttypes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
@@ -68,10 +79,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SimpleMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:two_hero\\SimpleMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\two_hero\\music.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -104,90 +111,90 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LibraryMod\\LibraryMod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LibraryMod\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\SimpleMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkinLevel\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\HelloWorld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LibraryMod\\HelloWorld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\DebugModMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DebugMod\\DebugModMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SampleHook\\SampleHook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCellsMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoubleCells\\DoubleCellsMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\FxMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FxMod\\FxMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHookMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SampleHook\\SampleHookMod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FxMod\\StringUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\App\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkinLevel\\SkinLevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{205EA21A-CE5F-40EF-B182-76A006A41187}|LibraryMod\\LibraryMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\librarymod\\librarymod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{205EA21A-CE5F-40EF-B182-76A006A41187}|LibraryMod\\LibraryMod.csproj|solutionrelative:librarymod\\librarymod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkinLevel\\SkinLevel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\enemiesvsenemies\\enemiesvsenemies\\modmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|solutionrelative:enemiesvsenemies\\enemiesvsenemies\\modmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCells.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DoubleCells\\DoubleCells.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\skinlevel\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|solutionrelative:skinlevel\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{205EA21A-CE5F-40EF-B182-76A006A41187}|LibraryMod\\LibraryMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\librarymod\\helloworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{205EA21A-CE5F-40EF-B182-76A006A41187}|LibraryMod\\LibraryMod.csproj|solutionrelative:librarymod\\helloworld.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\Fxmod\\FxMod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Fxmod\\FxMod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\enemiesvsenemies\\enemiesvsenemies\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|solutionrelative:enemiesvsenemies\\enemiesvsenemies\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SkinLevel\\_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06211DC9-64CF-46B0-A814-BEACA73FA016}|DebugMod\\DebugMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\debugmod\\debugmodmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06211DC9-64CF-46B0-A814-BEACA73FA016}|DebugMod\\DebugMod.csproj|solutionrelative:debugmod\\debugmodmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{BE1E07A7-ADE1-4B06-9DAF-37BA5C5BECF6}|SampleHook\\SampleHook.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\samplehook\\samplehook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BE1E07A7-ADE1-4B06-9DAF-37BA5C5BECF6}|SampleHook\\SampleHook.csproj|solutionrelative:samplehook\\samplehook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{E5F09225-F441-4E13-A30C-CFBD20339301}|DoubleCells\\DoubleCells.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\doublecells\\doublecellsmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5F09225-F441-4E13-A30C-CFBD20339301}|DoubleCells\\DoubleCells.csproj|solutionrelative:doublecells\\doublecellsmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\fxmod\\fxmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|solutionrelative:fxmod\\fxmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE1E07A7-ADE1-4B06-9DAF-37BA5C5BECF6}|SampleHook\\SampleHook.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\samplehook\\samplehookmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE1E07A7-ADE1-4B06-9DAF-37BA5C5BECF6}|SampleHook\\SampleHook.csproj|solutionrelative:samplehook\\samplehookmod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\fxmod\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|solutionrelative:fxmod\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\skinlevel\\skinlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|solutionrelative:skinlevel\\skinlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\skinlevel\\skinlevel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|solutionrelative:skinlevel\\skinlevel.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5F09225-F441-4E13-A30C-CFBD20339301}|DoubleCells\\DoubleCells.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\doublecells\\doublecells.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E5F09225-F441-4E13-A30C-CFBD20339301}|DoubleCells\\DoubleCells.csproj|solutionrelative:doublecells\\doublecells.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\enemiesvsenemies\\enemiesvsenemies\\enemiesvsenemies.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|solutionrelative:enemiesvsenemies\\enemiesvsenemies\\enemiesvsenemies.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\fxmod\\fxmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A51E8903-D78D-EA09-27A4-7EC054F87E2C}|Fxmod\\FxMod.csproj|solutionrelative:fxmod\\fxmod.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\skinlevel\\_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66283E7F-9B69-F77E-F132-593073710147}|SkinLevel\\SkinLevel.csproj|solutionrelative:skinlevel\\_npc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D40CCA-90D1-4206-9478-8526F1769AC2}|two_hero\\SampleSimple.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\two_hero\\simplemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D40CCA-90D1-4206-9478-8526F1769AC2}|two_hero\\SampleSimple.csproj|solutionrelative:two_hero\\simplemod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\enemiesvsenemies\\enemiesvsenemies\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|solutionrelative:enemiesvsenemies\\enemiesvsenemies\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|d:\\adeadcellsmod\\core-main\\deadcells-coremodding-main\\enemiesvsenemies\\enemiesvsenemies\\enemiesvsenemies.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9E30D79B-7DAE-AC08-DA25-FC244441E8DC}|EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj|solutionrelative:enemiesvsenemies\\enemiesvsenemies\\enemiesvsenemies.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -197,22 +204,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DeadCellsCoreModding.MDK.props",
-              "DocumentMoniker": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.props",
-              "ToolTip": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.props [\u53EA\u8BFB]",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-11-01T19:06:15.722Z",
-              "EditorCaption": " [\u53EA\u8BFB]"
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RandomLevel\\Main.cs",
+              "RelativeDocumentMoniker": "RandomLevel\\Main.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RandomLevel\\Main.cs",
+              "RelativeToolTip": "RandomLevel\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:53:31.665Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\Main.cs",
+              "RelativeDocumentMoniker": "RainMod\\Main.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\Main.cs",
+              "RelativeToolTip": "RainMod\\Main.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvygAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:53:08.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RainMod",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj",
+              "RelativeDocumentMoniker": "RainMod\\RainMod.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\RainMod\\RainMod.csproj",
+              "RelativeToolTip": "RainMod\\RainMod.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T15:53:00.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Other_QueenRapier.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_QueenRapier.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_QueenRapier.cs",
@@ -223,108 +258,100 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Other_katana.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_katana.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_katana.cs",
               "ToolTip": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_katana.cs",
               "RelativeToolTip": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_katana.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAIwBkAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T13:02:38.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Other_Starfury.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_Starfury.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_Starfury.cs",
               "ToolTip": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_Starfury.cs",
               "RelativeToolTip": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\Other_Starfury.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T20:52:45.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "OtherDashSword.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\OtherDashSword.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\OtherDashSword.cs",
               "ToolTip": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\OtherDashSword.cs",
               "RelativeToolTip": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\OtherDashSword.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAmwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T23:48:39.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "DeadCellsCoreModding.MDK.targets",
               "DocumentMoniker": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.targets",
-              "ToolTip": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.targets [\u53EA\u8BFB]",
+              "ToolTip": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.targets",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-11-01T19:06:17.01Z",
-              "EditorCaption": " [\u53EA\u8BFB]"
+              "WhenOpened": "2025-11-01T19:06:17.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "SampleSimple.csproj",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\SampleSimple.csproj",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\SampleSimple.csproj",
               "ToolTip": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\SampleSimple.csproj",
               "RelativeToolTip": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\SampleSimple.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-08T15:44:38.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 4,
+              "Title": "DeadCellsCoreModding.MDK.props",
+              "DocumentMoniker": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.props",
+              "ToolTip": "C:\\Users\\Michael\\.nuget\\packages\\deadcellscoremodding.mdk\\1.0.1\\build\\DeadCellsCoreModding.MDK.props",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-11-01T19:06:15.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "StringUtils.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\StringUtils.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\StringUtils.cs",
               "ToolTip": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SampleSimple\\StringUtils.cs",
               "RelativeToolTip": "..\\..\\core-main(5)\\core-main\\sample\\SampleSimple\\StringUtils.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-14T14:13:27.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "LibraryMod.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj",
               "RelativeDocumentMoniker": "LibraryMod\\LibraryMod.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\LibraryMod.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\LibraryMod.csproj",
               "RelativeToolTip": "LibraryMod\\LibraryMod.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-07T10:20:28.206Z"
+              "WhenOpened": "2025-10-07T10:20:28.206Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\Class1.cs",
-              "RelativeDocumentMoniker": "LibraryMod\\Class1.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\Class1.cs",
-              "RelativeToolTip": "LibraryMod\\Class1.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwGABAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T11:56:49.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Other_QueenRapier.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res\\data.cdb_\\item\\Other_QueenRapier.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res\\data.cdb_\\item\\Other_QueenRapier.json",
               "ToolTip": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res\\data.cdb_\\item\\Other_QueenRapier.json",
               "RelativeToolTip": "..\\..\\ModTool\\ResTool\\res\\data.cdb_\\item\\Other_QueenRapier.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-31T15:04:27.275Z"
             },
@@ -342,11 +369,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ModMain.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
               "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
               "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\ModMain.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAIwDkAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -354,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "SimpleMod.cs",
               "DocumentMoniker": "C:\\Users\\Michael\\Downloads\\mugen_cut\\SimpleMod.cs",
               "ToolTip": "C:\\Users\\Michael\\Downloads\\mugen_cut\\SimpleMod.cs",
@@ -364,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "StringUtils.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\StringUtils.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\StringUtils.cs",
               "RelativeDocumentMoniker": "SkinLevel\\StringUtils.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\StringUtils.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\StringUtils.cs",
               "RelativeToolTip": "SkinLevel\\StringUtils.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAUwDIAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -376,11 +403,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "HelloWorld.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\HelloWorld.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\HelloWorld.cs",
               "RelativeDocumentMoniker": "LibraryMod\\HelloWorld.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\LibraryMod\\HelloWorld.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\LibraryMod\\HelloWorld.cs",
               "RelativeToolTip": "LibraryMod\\HelloWorld.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -388,11 +415,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "StringUtils.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
               "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
               "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\StringUtils.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAUwBAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -400,11 +427,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "DebugModMod.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\DebugModMod.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DebugMod\\DebugModMod.cs",
               "RelativeDocumentMoniker": "DebugMod\\DebugModMod.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\DebugMod\\DebugModMod.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DebugMod\\DebugModMod.cs",
               "RelativeToolTip": "DebugMod\\DebugModMod.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -412,23 +439,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "SampleHook.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHook.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SampleHook\\SampleHook.csproj",
               "RelativeDocumentMoniker": "SampleHook\\SampleHook.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHook.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SampleHook\\SampleHook.csproj",
               "RelativeToolTip": "SampleHook\\SampleHook.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-06T20:50:48.019Z"
+              "WhenOpened": "2025-10-06T20:50:48.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "DoubleCellsMod.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCellsMod.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DoubleCells\\DoubleCellsMod.cs",
               "RelativeDocumentMoniker": "DoubleCells\\DoubleCellsMod.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCellsMod.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DoubleCells\\DoubleCellsMod.cs",
               "RelativeToolTip": "DoubleCells\\DoubleCellsMod.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -436,11 +464,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "FxMod.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\FxMod.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\FxMod\\FxMod.cs",
               "RelativeDocumentMoniker": "FxMod\\FxMod.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\FxMod.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\FxMod\\FxMod.cs",
               "RelativeToolTip": "FxMod\\FxMod.cs",
               "ViewState": "AgIAAGgAAAAAAAAAAAAWwHsAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -448,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "other_katana.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res\\data.cdb_\\item\\other_katana.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res\\data.cdb_\\item\\other_katana.json",
@@ -460,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "OtherDashSword.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res\\data.cdb_\\item\\OtherDashSword.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res\\data.cdb_\\item\\OtherDashSword.json",
@@ -472,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "other_katana.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res\\data.cdb_\\weapon\\other_katana.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res\\data.cdb_\\weapon\\other_katana.json",
@@ -484,11 +512,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "SampleHookMod.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHookMod.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SampleHook\\SampleHookMod.cs",
               "RelativeDocumentMoniker": "SampleHook\\SampleHookMod.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SampleHook\\SampleHookMod.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SampleHook\\SampleHookMod.cs",
               "RelativeToolTip": "SampleHook\\SampleHookMod.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAkwEAAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -496,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "StringUtils.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\StringUtils.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\FxMod\\StringUtils.cs",
               "RelativeDocumentMoniker": "FxMod\\StringUtils.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\StringUtils.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\FxMod\\StringUtils.cs",
               "RelativeToolTip": "FxMod\\StringUtils.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -508,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "modinfo.json",
               "DocumentMoniker": "D:\\steam\\steamapps\\common\\Dead Cells\\coremod\\mods\\Simple\\modinfo.json",
               "RelativeDocumentMoniker": "..\\..\\..\\steam\\steamapps\\common\\Dead Cells\\coremod\\mods\\Simple\\modinfo.json",
@@ -520,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "modcore.json",
               "DocumentMoniker": "D:\\steam\\steamapps\\common\\Dead Cells\\coremod\\config\\modcore.json",
               "RelativeDocumentMoniker": "..\\..\\..\\steam\\steamapps\\common\\Dead Cells\\coremod\\config\\modcore.json",
@@ -532,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\App\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\App\\Program.cs",
@@ -544,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "OtherDashSword.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res1\\data.cdb_\\weapon\\OtherDashSword.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res1\\data.cdb_\\weapon\\OtherDashSword.json",
@@ -555,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "OtherDashSword.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\ResTool\\res1\\data.cdb_\\item\\OtherDashSword.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\ResTool\\res1\\data.cdb_\\item\\OtherDashSword.json",
@@ -566,11 +594,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "SkinLevel.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\SkinLevel.cs",
               "RelativeDocumentMoniker": "SkinLevel\\SkinLevel.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\SkinLevel.cs",
               "RelativeToolTip": "SkinLevel\\SkinLevel.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAcwC0AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -578,43 +606,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "SkinLevel.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\SkinLevel.csproj",
               "RelativeDocumentMoniker": "SkinLevel\\SkinLevel.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\SkinLevel.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\SkinLevel.csproj",
               "RelativeToolTip": "SkinLevel\\SkinLevel.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T13:35:41.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "DoubleCells.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCells.csproj",
-              "RelativeDocumentMoniker": "DoubleCells\\DoubleCells.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\DoubleCells\\DoubleCells.csproj",
-              "RelativeToolTip": "DoubleCells\\DoubleCells.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-17T08:05:01.601Z"
+              "WhenOpened": "2025-10-18T13:35:41.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 50,
-              "Title": "EnemiesVsEnemies.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
-              "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
-              "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "DoubleCells.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DoubleCells\\DoubleCells.csproj",
+              "RelativeDocumentMoniker": "DoubleCells\\DoubleCells.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\DoubleCells\\DoubleCells.csproj",
+              "RelativeToolTip": "DoubleCells\\DoubleCells.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T06:21:49.895Z"
+              "WhenOpened": "2025-10-17T08:05:01.601Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 51,
+              "Title": "EnemiesVsEnemies.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-12T06:21:49.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "npc.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\SkinLevel\\npc.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\SkinLevel\\npc.cs",
@@ -626,23 +657,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "FxMod.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\FxMod.csproj",
-              "RelativeDocumentMoniker": "FxMod\\FxMod.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\FxMod\\FxMod.csproj",
-              "RelativeToolTip": "FxMod\\FxMod.csproj",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Fxmod\\FxMod.csproj",
+              "RelativeDocumentMoniker": "Fxmod\\FxMod.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\Fxmod\\FxMod.csproj",
+              "RelativeToolTip": "Fxmod\\FxMod.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-17T09:17:31.257Z"
+              "WhenOpened": "2025-10-17T09:17:31.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "_npc.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\_npc.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\_npc.cs",
               "RelativeDocumentMoniker": "SkinLevel\\_npc.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\SkinLevel\\_npc.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\SkinLevel\\_npc.cs",
               "RelativeToolTip": "SkinLevel\\_npc.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -650,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "StringUtils.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\StringUtils.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\StringUtils.cs",
@@ -661,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "SkinLevel.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\SkinLevel.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\SkinLevel.cs",
@@ -672,7 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "_npc.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\_npc.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\_npc.cs",
@@ -683,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "OtherDashSword.cs",
               "DocumentMoniker": "C:\\Users\\Michael\\AppData\\Local\\Temp\\a858f1f2-5186-44d4-86bb-ead7401076a1_\u98DE\u96F7\u795E.zip.6a1\\\u98DE\u96F7\u795E\\SampleSimple\\OtherDashSword.cs",
               "ToolTip": "C:\\Users\\Michael\\AppData\\Local\\Temp\\a858f1f2-5186-44d4-86bb-ead7401076a1_\u98DE\u96F7\u795E.zip.6a1\\\u98DE\u96F7\u795E\\SampleSimple\\OtherDashSword.cs [\u53EA\u8BFB]",
@@ -693,18 +725,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 54,
               "Title": "SimpleMod.cs",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SimpleMod.cs",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SimpleMod.cs",
               "RelativeDocumentMoniker": "two_hero\\SimpleMod.cs",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\two_hero\\SimpleMod.cs",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\two_hero\\SimpleMod.cs",
               "RelativeToolTip": "two_hero\\SimpleMod.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T14:41:51.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "music.txt",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\two_hero\\music.txt",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\two_hero\\music.txt",
@@ -715,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\FirstDeadCellsMod\\Properties\\launchSettings.json",
@@ -726,11 +758,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
               "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -738,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "modinfo.json",
               "DocumentMoniker": "D:\\steam\\steamapps\\common\\Dead Cells\\coremod\\mods\\EnemiesVsEnemies\\modinfo.json",
               "RelativeDocumentMoniker": "..\\..\\..\\steam\\steamapps\\common\\Dead Cells\\coremod\\mods\\EnemiesVsEnemies\\modinfo.json",
@@ -749,30 +781,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "EnemiesVsEnemies.csproj",
-              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "DocumentIndex": 56,
+              "Title": "EnemiesVsEnemies",
+              "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
               "RelativeDocumentMoniker": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
-              "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
+              "ToolTip": "D:\\Adeadcellsmod\\core-main\\DeadCells-CoreModding-Main\\EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
               "RelativeToolTip": "EnemiesVsEnemies\\EnemiesVsEnemies\\EnemiesVsEnemies.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T07:26:20.707Z"
+              "WhenOpened": "2025-10-12T07:26:20.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "modinfo.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main\\sample\\bin\\Simple\\modinfo.json",
-              "RelativeDocumentMoniker": "bin\\Simple\\modinfo.json",
+              "RelativeDocumentMoniker": "..\\sample\\bin\\Simple\\modinfo.json",
               "ToolTip": "D:\\Adeadcellsmod\\core-main\\sample\\bin\\Simple\\modinfo.json",
-              "RelativeToolTip": "bin\\Simple\\modinfo.json",
+              "RelativeToolTip": "..\\sample\\bin\\Simple\\modinfo.json",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-12T07:27:12.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "objecttypes.json",
               "DocumentMoniker": "D:\\Adeadcellsmod\\ModTool\\TmxTool\\tiled1\\objecttypes.json",
               "RelativeDocumentMoniker": "..\\..\\ModTool\\TmxTool\\tiled1\\objecttypes.json",
@@ -784,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "StringUtils.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\two_hero\\StringUtils.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\two_hero\\StringUtils.cs",
@@ -795,7 +828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "\u6784\u5EFA.bat",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\two_hero\\\u6784\u5EFA.bat",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\two_hero\\\u6784\u5EFA.bat",
@@ -806,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.md",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.md",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.md",
@@ -817,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "CodeFile1.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\LibraryMod\\\u65B0\u6587\u4EF6\u5939\\CodeFile1.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\LibraryMod\\\u65B0\u6587\u4EF6\u5939\\CodeFile1.cs",
@@ -828,7 +861,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.cs",
               "DocumentMoniker": "D:\\Adeadcellsmod\\core-main(5)\\core-main\\sample\\LibraryMod\\\u65B0\u6587\u4EF6\u5939\\\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.cs",
               "RelativeDocumentMoniker": "..\\..\\core-main(5)\\core-main\\sample\\LibraryMod\\\u65B0\u6587\u4EF6\u5939\\\u6B7B\u4EA1\u7EC6\u80DEGameProxy\u4EE3\u7801\u67B6\u6784\u7FFB\u8BD1\u6587\u6863.cs",

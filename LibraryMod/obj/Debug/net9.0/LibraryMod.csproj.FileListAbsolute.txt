@@ -1,0 +1,6 @@
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.csproj.AssemblyReference.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.AssemblyInfoInputs.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.AssemblyInfo.cs
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.csproj.CoreCompileInputs.cache
+D:\Adeadcellsmod\core-main\DeadCells-CoreModding-Main\LibraryMod\obj\Debug\net9.0\LibraryMod.sourcelink.json

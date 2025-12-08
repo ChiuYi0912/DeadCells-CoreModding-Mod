@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kaguya")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0679f9aceccfdce812a2529cdd65af0aa41609bc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kaguya")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kaguya")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
