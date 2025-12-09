@@ -44,7 +44,5 @@ namespace Kaguya
         {
             base.hitFromWeapon(_cycle, _cycl);
         }
-
-
     }
 }

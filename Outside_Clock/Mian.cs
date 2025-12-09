@@ -27,12 +27,13 @@ using dc.hxsl;
 using System.Security.Cryptography;
 using ModCore.Storage;
 using Outside_Clock.Clock_Mobs;
+using dc.libs.heaps.slib;
 
 namespace Outside_Clock
 {
     public class Mian : ModBase,
-        IOnGameEndInit,
-        IOnGameExit
+        IOnGameExit,
+        IOnGameEndInit
 
 
     {
@@ -58,6 +59,8 @@ namespace Outside_Clock
             Hook_HiddenTrigger.trigger += CinematicOut_Clock_Main.Hook_HiddenTrigger_trigger;
 
             dc.en.Hook__Mob.create += MobcreateMain.Hook__Mob_create;
+
+
         }
 
 
@@ -177,7 +180,6 @@ namespace Outside_Clock
             dc.Data.Class.loadJson(
                json,
                default);
-
         }
         private static Config<Out_Clock_Config> config { get; } = new("Out_Clock_Enter");
         void IOnGameExit.OnGameExit()
@@ -187,5 +189,16 @@ namespace Outside_Clock
             Logger.Debug("已初始化过场动画");
         }
 
+        public void mobspr()
+        {
+            var res = Info.ModRoot!.GetFilePath("res.pak");
+            FsPak.Instance.FileSystem.loadPak(res.AsHaxeString());
+            SpriteLib lib = Assets.Class.lib.get("clock/atlas/miniLeapingDuelyst.atlas".AsHaxeString());
+        }
+
+        public string Mobres()
+        {
+            return Info.ModRoot!.GetFilePath("clock.pak");
+        }
     }
 }

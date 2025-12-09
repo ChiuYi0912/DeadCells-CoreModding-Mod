@@ -79,13 +79,12 @@ namespace Kaguya
 
         void IOnGameEndInit.OnGameEndInit()
         {
-            var res = Info.ModRoot!.GetFilePath("Kaguya.pak");
+            var res = Info.ModRoot!.GetFilePath("res.pak");
             FsPak.Instance.FileSystem.loadPak(res.AsHaxeString());
             var json = CDBManager.Class.instance.getAlteredCDB();
             dc.Data.Class.loadJson(
                json,
                default);
-
         }
 
         void IOnGameExit.OnGameExit()
