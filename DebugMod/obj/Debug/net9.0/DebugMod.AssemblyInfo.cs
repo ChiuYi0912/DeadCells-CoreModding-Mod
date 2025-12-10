@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DebugMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ba2f500ed11363c4ce91f4862439c5dd76fd0ad5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5775c809d78d334c8ccf565cca8b2a5ea8dfb143")]
 [assembly: System.Reflection.AssemblyProductAttribute("DebugMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DebugMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

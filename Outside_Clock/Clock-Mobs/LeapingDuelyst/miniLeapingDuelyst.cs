@@ -1,10 +1,12 @@
 using System;
+using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using dc;
 using dc.en;
 using dc.en.mob;
 using dc.h3d.mat;
 using dc.h3d.pass;
+using dc.haxe;
 using dc.hl;
 using dc.hxd;
 using dc.hxd.res;
@@ -14,46 +16,102 @@ using dc.pr;
 using HaxeProxy.Runtime;
 using ModCore.Mods;
 using ModCore.Modules;
+using ModCore.Serialization;
+using ModCore.Storage;
 using ModCore.Utitities;
 using Serilog;
+using Log = Serilog.Log;
 
 namespace Outside_Clock.Clock_Mobs;
 
-public class miniLeapingDuelyst : LeapingDuelyst
+public class miniLeapingDuelyst : LeapingDuelyst,
+    IHxbitSerializeCallback,
+    IHxbitSerializable<miniLeapingDuelyst.Data>
 {
-    public miniLeapingDuelyst(Level lvl, int x, int y, int dmgTier, int lifeTier) : base(lvl, x, y, dmgTier, lifeTier)
+    private class Data
     {
+        public miniLeapingDuelyst mobminiLeapingDuelyst = null!;
+        public int maxlife;
     }
 
-    private SpriteLib Hook_AssetsLibManager_get(Hook_AssetsLibManager.orig_get orig, AssetsLibManager self, dc.String o)
+
+    public miniLeapingDuelyst(Level lvl, int x, int y, int dmgTier, int lifeTier) : base(lvl, x, y, dmgTier, lifeTier)
+    {
+
+    }
+
+    public static SpriteLib Hook_AssetsLibManager_get(Hook_AssetsLibManager.orig_get orig, AssetsLibManager self, dc.String o)
     {
         var mob_atlas = ToolsMob.Replace_atlas(orig, self, o, "atlas/LeapingDuelyst.atlas", "atlas/miniLeapingDuelyst.atlas");
         return mob_atlas;
     }
-    private Resource Hook_Loader_loadCache(Hook_Loader.orig_loadCache orig, Loader self, dc.String c, Class res)
+    public static dc.hxd.res.Resource Hook_Loader_loadCache(Hook_Loader.orig_loadCache orig, Loader self, dc.String c, Class res)
     {
-        if (this == null)
-        {
-            return orig(self, c, res);
-        }
-        else if (c.ToString().Equals("atlas/LeapingDuelyst_n.png", StringComparison.CurrentCultureIgnoreCase))
-        {
-            Log.Debug($" 法线图替换: {c.ToString()} -> atlas/minHeapingDuelyst_n.png");
-            return orig(self, "atlas/miniLeapingDuelyst_n.png".AsHaxeString(), res);
-        }
-        return orig(self, c, res);
+        var mob_n_png = ToolsMob.Hook_Loader_loadCache(orig, self, c, res, "atlas/LeapingDuelyst_n.png", "atlas/miniLeapingDuelyst_n.png");
+        return mob_n_png;
     }
 
     public override void initGfx()
     {
-
-        Hook_AssetsLibManager.get += Hook_AssetsLibManager_get;
-        Hook_Loader.loadCache += Hook_Loader_loadCache;
-        Log.Debug("判断成功");
         base.initGfx();
-        Hook_AssetsLibManager.get -= Hook_AssetsLibManager_get;
-        Hook_Loader.loadCache -= Hook_Loader_loadCache;
+    }
+
+    public override int getCLID()
+    {
+        return base.getCLID();
+    }
+
+    public override void preUpdate()
+    {
+        base.preUpdate();
+        if (life > data.maxlife)
+        {
+            data.maxlife = life;
+        }
     }
 
 
+    #region 序列化
+
+    private Data data = new();
+
+
+    Data IHxbitSerializable<Data>.GetData()
+    {
+        data.maxlife = maxLife;
+        return data;
+    }
+
+
+    void IHxbitSerializable<Data>.SetData(Data data)
+    {
+        maxLife = data.maxlife;
+        this.data = data;
+    }
+
+    void IHxbitSerializeCallback.OnBeforeSerializing()
+    {
+
+    }
+    void IHxbitSerializeCallback.OnAfterDeserializing()
+    {
+        Debug.Assert(data != null);
+    }
+    #region 贴图
+    public void Hook_LeapingDuelyst_initGfx(Hook_LeapingDuelyst.orig_initGfx orig, LeapingDuelyst self)
+    {
+        if (self._level.map.id.ToString().Equals("Out_Clock", StringComparison.CurrentCultureIgnoreCase))
+        {
+            Hook_AssetsLibManager.get += miniLeapingDuelyst.Hook_AssetsLibManager_get;
+            Hook_Loader.loadCache += miniLeapingDuelyst.Hook_Loader_loadCache;
+        }
+        else
+        {
+            Hook_AssetsLibManager.get -= miniLeapingDuelyst.Hook_AssetsLibManager_get;
+            Hook_Loader.loadCache -= miniLeapingDuelyst.Hook_Loader_loadCache;
+        }
+        orig(self);
+    }
+    #endregion
+    #endregion
 }

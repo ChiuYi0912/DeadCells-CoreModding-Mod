@@ -13,7 +13,7 @@ public class CinematicOut_Clock_Main : IOnGameInit
 {
 
     private static bool a = false;
-    private static Config<Out_Clock_Config> Out_Clock_Enter_save { get; } = new("Out_Clock_Enter");
+    public static Config<Out_Clock_Config> Out_Clock_Enter_save { get; } = new("Out_Clock_Enter");
 
     internal static void Hook_HiddenTrigger_trigger(Hook_HiddenTrigger.orig_trigger orig, HiddenTrigger self, Entity dh)
     {
