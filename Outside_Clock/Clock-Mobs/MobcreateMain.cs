@@ -33,9 +33,11 @@ public class MobcreateMain
             {
                 Hook_LeapingDuelyst.initGfx += mob1Leaping.Hook_LeapingDuelyst_initGfx;
                 Outside_Clock.CinematicOut_Clock_Main.Out_Clock_Enter_save.Value.createminileaping = true;
-                Log.Information("已修改创造mob:minileaping");
+                Log.Information("已修改创造mob:minilea");
             }
             mob1Leaping.init();
+            // BonePillar bonePillar = new BonePillar(level, cx, cy, dmgTier, lifeTier.value);
+            // bonePillar.init();
             return mob1Leaping;
         }
         return orig(k, level, cx, cy, dmgTier, lifeTier);

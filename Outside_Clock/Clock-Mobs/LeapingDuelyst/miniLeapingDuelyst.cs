@@ -32,6 +32,8 @@ public class miniLeapingDuelyst : LeapingDuelyst,
     {
         public miniLeapingDuelyst mobminiLeapingDuelyst = null!;
         public int maxlife;
+        public double sprx;
+        public double spry;
     }
 
 
@@ -56,10 +58,6 @@ public class miniLeapingDuelyst : LeapingDuelyst,
         base.initGfx();
     }
 
-    public override int getCLID()
-    {
-        return base.getCLID();
-    }
 
     public override void preUpdate()
     {
@@ -67,7 +65,22 @@ public class miniLeapingDuelyst : LeapingDuelyst,
         if (life > data.maxlife)
         {
             data.maxlife = life;
+            data.sprx = sprScaleX;
+            data.spry = sprScaleY;
         }
+        if (maxLife > data.maxlife / 3)
+        {
+            var length = 10;
+            elite = false;
+            setElite(false);
+            for (int i = 0; i < length; i++)
+            {
+                data.sprx *= 2f;
+                data.spry *= 2f;
+            }
+
+        }
+
     }
 
 
@@ -79,6 +92,9 @@ public class miniLeapingDuelyst : LeapingDuelyst,
     Data IHxbitSerializable<Data>.GetData()
     {
         data.maxlife = maxLife;
+        data.sprx = sprScaleX;
+        data.spry = sprScaleY;
+
         return data;
     }
 
@@ -86,6 +102,8 @@ public class miniLeapingDuelyst : LeapingDuelyst,
     void IHxbitSerializable<Data>.SetData(Data data)
     {
         maxLife = data.maxlife;
+        sprScaleX = data.sprx;
+        sprScaleY = data.spry;
         this.data = data;
     }
 

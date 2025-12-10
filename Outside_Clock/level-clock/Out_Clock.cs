@@ -45,6 +45,8 @@ public class Out_Clock : LevelStruct
         RoomNode entranceNode = base.createNode(null, "RoofEntrance".AsHaxeString(), null, "start".AsHaxeString());
         entranceNode.AddFlags(new RoomFlag.NoExitSizeCheck());
         entranceNode.setConstraint(new LinkConstraint.RightOnly());
+        entranceNode.addNpc(new NpcId.PlagueDoctor());
+
 
         var forcedBiome = "ClockTower".AsHaxeString();
         var virtual_add = new virtual_specificBiome_();

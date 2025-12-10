@@ -39,7 +39,6 @@ public class CinematicOut_Clock_Main : IOnGameInit
             }
 
 
-
             if (self.genericEventId.ToString() == "ow2")
             {
                 if (a == false)
@@ -63,5 +62,4 @@ public class CinematicOut_Clock_Main : IOnGameInit
         Out_Clock_Enter_save.Save();
         Log.Debug("已初始化过场动画");
     }
-
 }
