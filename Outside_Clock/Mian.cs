@@ -65,10 +65,6 @@ namespace Outside_Clock
             MobcreateMain mobcreateMain = new MobcreateMain();
             dc.en.Hook__Mob.create += mobcreateMain.Hook__Mob_create;
 
-
-
-
-
         }
 
 
@@ -87,8 +83,6 @@ namespace Outside_Clock
             //     }
             // }
             orig(self);
-
-
         }
 
         private void Hook_LevelTransition_entranceWalk(Hook_LevelTransition.orig_entranceWalk orig, LevelTransition self, int xFrom, int xTo, Exit exit)
@@ -189,6 +183,7 @@ namespace Outside_Clock
                json,
                default);
         }
+
         private static Config<Out_Clock_Config> config { get; } = new("Out_Clock_Enter");
         void IOnGameExit.OnGameExit()
         {

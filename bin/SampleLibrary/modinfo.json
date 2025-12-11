@@ -1,0 +1,10 @@
+{
+  "name": "SampleLibrary",
+  "version": "1.0.0",
+  "type": "library",
+  "repositoryUrl": "https://github.com/dead-cells-core-modding/core",
+  "assemblies": [
+    "LibraryMod.dll"
+  ],
+  "dependencies": []
+}

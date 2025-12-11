@@ -1,18 +1,22 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using dc;
 using dc.en;
 using dc.en.mob;
+using dc.h2d;
 using dc.h3d.mat;
 using dc.h3d.pass;
 using dc.haxe;
 using dc.hl;
+using dc.hl.types;
 using dc.hxd;
 using dc.hxd.res;
 using dc.libs.heaps;
 using dc.libs.heaps.slib;
 using dc.pr;
+using dc.tool.skill;
 using HaxeProxy.Runtime;
 using ModCore.Mods;
 using ModCore.Modules;
@@ -55,35 +59,70 @@ public class miniLeapingDuelyst : LeapingDuelyst,
 
     public override void initGfx()
     {
+
         base.initGfx();
     }
-
-
-    public override void preUpdate()
+    private bool heroatargrt = true;
+    private bool dodgebool = false;
+    public override void behaviourAi()
     {
-        base.preUpdate();
-        if (life > data.maxlife)
+
+        base.behaviourAi();
+        var owen = ((double)this.cx + this.xr) * 24.0;
+        if (this.aTarget != null && dodgebool == false)
         {
-            data.maxlife = life;
-            data.sprx = sprScaleX;
-            data.spry = sprScaleY;
-        }
-        if (maxLife > data.maxlife / 3)
-        {
-            var length = 10;
-            elite = false;
-            setElite(false);
-            for (int i = 0; i < length; i++)
+
+            if (((double)aTarget.cx + aTarget.xr) * 24.0 > owen)
             {
-                data.sprx *= 2f;
-                data.spry *= 2f;
+                owen = 1;
+                var prepare = owen;
+                heroatargrt = dodge.prepare((int?)prepare);
+                OldSkill oldSkill2 = base.getOldSkill("jump2".AsHaxeString());
+                base.queueAttack((OldMobSkill)oldSkill2, false, null);
+                return;
             }
 
         }
 
+
+
+
+
+
+
     }
 
+    private bool loadspr = false;
+    public override void preUpdate()
+    {
+        base.preUpdate();
 
+        if (life < maxLife / 2)
+        {
+            if (loadspr == false)
+            {
+                int length = 3;
+                for (int i = 0; i < length; i++)
+                {
+
+                    sprScaleX += 0.1;
+                    sprScaleY += 0.1;
+                    data.maxlife = life;
+                }
+                loadspr = true;
+            }
+        }
+        if (life < maxLife / 2)
+        {
+            this.elite = false;
+            setElite(false);
+            createLight(5, null, null, 1);
+            data.sprx = sprScaleX;
+            data.spry = sprScaleY;
+            data.maxlife = life;
+        }
+
+    }
     #region 序列化
 
     private Data data = new();
@@ -94,7 +133,6 @@ public class miniLeapingDuelyst : LeapingDuelyst,
         data.maxlife = maxLife;
         data.sprx = sprScaleX;
         data.spry = sprScaleY;
-
         return data;
     }
 

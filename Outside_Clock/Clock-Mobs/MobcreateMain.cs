@@ -24,15 +24,16 @@ public class MobcreateMain
         public int build = 0;
     }
     private sData data1 = new();
+    private bool sprbool = false;
     public Mob Hook__Mob_create(Hook__Mob.orig_create orig, dc.String k, Level level, int cx, int cy, int dmgTier, Ref<int> lifeTier)
     {
         if (k.ToString().Equals("miniLeapingDuelyst", StringComparison.CurrentCultureIgnoreCase))
         {
             var mob1Leaping = new miniLeapingDuelyst(level, cx, cy, dmgTier, lifeTier.value);
-            if (Outside_Clock.CinematicOut_Clock_Main.Out_Clock_Enter_save.Value.createminileaping == false)
+            if (sprbool == false)
             {
                 Hook_LeapingDuelyst.initGfx += mob1Leaping.Hook_LeapingDuelyst_initGfx;
-                Outside_Clock.CinematicOut_Clock_Main.Out_Clock_Enter_save.Value.createminileaping = true;
+                sprbool = true;
                 Log.Information("已修改创造mob:minilea");
             }
             mob1Leaping.init();

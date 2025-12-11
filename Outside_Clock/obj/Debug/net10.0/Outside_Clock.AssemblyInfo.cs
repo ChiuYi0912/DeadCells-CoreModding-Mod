@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Outside_Clock")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c4a5267cdbf330e7e5a00aed9e62bdb37196f59a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6bdcde935e3e193d8d629d2b9b52b308bbb9399")]
 [assembly: System.Reflection.AssemblyProductAttribute("Outside_Clock")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Outside_Clock")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
