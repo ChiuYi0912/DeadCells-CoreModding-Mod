@@ -405,10 +405,6 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "AWSSDK.DynamoDBv2": {
-              "target": "Package",
-              "version": "[4.0.6.2, )"
-            },
             "DeadCellsCoreModding.MDK": {
               "target": "Package",
               "version": "[1.0.1, )"

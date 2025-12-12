@@ -48,7 +48,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
-          "AWSSDK.DynamoDBv2": "4.0.6.2",
           "DeadCellsCoreModding.MDK": "1.0.1"
         },
         "compile": {

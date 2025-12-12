@@ -1,30 +1,15 @@
-using System;
-using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
 using dc;
-using dc.en;
-using dc.en.gr;
 using dc.en.mob;
-using dc.h2d;
-using dc.h3d.mat;
-using dc.h3d.pass;
-using dc.haxe;
 using dc.hl;
-using dc.hl.types;
-using dc.hxd;
 using dc.hxd.res;
-using dc.libs.heaps;
 using dc.libs.heaps.slib;
 using dc.pr;
+using dc.tool;
 using dc.tool.skill;
-using HaxeProxy.Runtime;
-using ModCore.Mods;
-using ModCore.Modules;
 using ModCore.Serialization;
 using ModCore.Storage;
 using ModCore.Utitities;
-using Serilog;
 using Log = Serilog.Log;
 using Math = System.Math;
 
@@ -152,6 +137,17 @@ public class miniLeapingDuelyst : LeapingDuelyst,
 
         }
 
+    }
+
+    public override void onLand(double d)
+    {
+        base.onLand(d);
+        //var list = Cooldown.Class.INDEXES.getDyn(75);
+        dc.tool.Cooldown cd = this.cd;
+        //dc.tool._Cooldown.CdInst cdInst = cd.fastCheck.get(157286400);
+        var cdframes = cd.cdList.array;
+        Log.Debug($"cd:{cd}");
+        Log.Debug(" 75-> " + Cooldown.Class.INDEXES.getDyn(75));
     }
     #region 序列化
 

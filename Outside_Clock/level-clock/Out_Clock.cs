@@ -1,26 +1,10 @@
-using System;
-using System.Net.Http.Headers;
-using System.Runtime.CompilerServices;
-using Amazon.Runtime.Internal.Util;
 using dc;
-using dc.en;
-using dc.en.inter;
-using dc.en.mob;
-using dc.haxe;
 using dc.hl.types;
-using dc.hxd.res;
 using dc.level;
-using dc.level.disp;
-using dc.level.gen.mapbuilder;
 using dc.libs;
-using dc.tool;
 using Hashlink.Virtuals;
 using HaxeProxy.Runtime;
 using ModCore.Utitities;
-using Outside_Clock.Clock_Mobs;
-using Serilog;
-using Serilog.Debugging;
-using Log = Serilog.Log;
 
 namespace Outside_Clock;
 

@@ -1,5 +1,4 @@
 ﻿using dc;
-using dc.haxe;
 using dc.level;
 using dc.libs;
 using dc.tool.mod;
@@ -9,26 +8,13 @@ using ModCore.Events.Interfaces.Game;
 using ModCore.Mods;
 using ModCore.Modules;
 using ModCore.Utitities;
-using HaxeProxy.Runtime;
-using dc.achievements;
 using dc.h2d;
 using dc.level.@struct;
-using dc.tool;
-using dc.en;
 using dc.pr;
 using dc.cine;
 using dc.en.inter;
-using System.Data.Common;
-using dc.libs.misc;
-using System.ComponentModel;
-using Hashlink;
-using dc.cdb;
-using dc.hxsl;
-using System.Security.Cryptography;
 using ModCore.Storage;
 using Outside_Clock.Clock_Mobs;
-using dc.libs.heaps.slib;
-using dc.en.mob;
 
 namespace Outside_Clock
 {
@@ -64,6 +50,8 @@ namespace Outside_Clock
 
             MobcreateMain mobcreateMain = new MobcreateMain();
             dc.en.Hook__Mob.create += mobcreateMain.Hook__Mob_create;
+
+
 
         }
 
