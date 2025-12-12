@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using dc;
 using dc.en;
+using dc.en.gr;
 using dc.en.mob;
 using dc.h2d;
 using dc.h3d.mat;
@@ -25,6 +26,7 @@ using ModCore.Storage;
 using ModCore.Utitities;
 using Serilog;
 using Log = Serilog.Log;
+using Math = System.Math;
 
 namespace Outside_Clock.Clock_Mobs;
 
@@ -67,32 +69,58 @@ public class miniLeapingDuelyst : LeapingDuelyst,
     public override void behaviourAi()
     {
 
-        base.behaviourAi();
-        var owen = ((double)this.cx + this.xr) * 24.0;
-        if (this.aTarget != null && dodgebool == false)
+        if (this.life < maxLife)
         {
 
-            if (((double)aTarget.cx + aTarget.xr) * 24.0 > owen)
-            {
-                owen = 1;
-                var prepare = owen;
-                heroatargrt = dodge.prepare((int?)prepare);
-                OldSkill oldSkill2 = base.getOldSkill("jump2".AsHaxeString());
-                base.queueAttack((OldMobSkill)oldSkill2, false, null);
-                return;
-            }
 
+            double ownPixelX = ((double)this.cx + this.xr) * 24;
+
+            if (this.aTarget != null && dodgebool == false)
+            {
+
+                double targetPixelX = ((double)aTarget.cx + aTarget.xr) * 24;
+
+                int direction;
+                if (targetPixelX > ownPixelX)
+                {
+                    direction = 1;
+                }
+                else
+                {
+                    direction = -1;
+                }
+
+                heroatargrt = dodge.prepare(direction);
+                OldSkill jumpSkill = base.getOldSkill("jump2".AsHaxeString());
+                base.queueAttack((OldMobSkill)jumpSkill, false, null);
+                dodgebool = true;
+            }
         }
 
+        if (aTarget != null && dodgebool == true)
+        {
+            double targetWorldX = (double)this.aTarget.cx + aTarget.xr;
+            double ownWorldX = (double)this.cx + this.xr;
 
+            double deltaX = Math.Abs(targetWorldX - ownWorldX);
 
+            double targetWorldY = (double)this.aTarget.cy + aTarget.yr;
+            double ownWorldY = (double)this.cy + this.yr;
 
+            double deltaY = Math.Abs(targetWorldY - ownWorldY);
 
+            if (deltaX < 20 && deltaY <= 2)
+            {
+                dodgebool = false;
+                Log.Debug($"解除限制 X距离:{deltaX:F2} Y距离:{deltaY:F2}");
+            }
+        }
 
-
+        base.behaviourAi();
     }
 
     private bool loadspr = false;
+    private bool lifetow = false;
     public override void preUpdate()
     {
         base.preUpdate();
@@ -107,19 +135,21 @@ public class miniLeapingDuelyst : LeapingDuelyst,
 
                     sprScaleX += 0.1;
                     sprScaleY += 0.1;
+                    baseMoveSpeedMul += 0.1;
                     data.maxlife = life;
+                    createLight(100, 10, 100, 1);
                 }
                 loadspr = true;
             }
         }
-        if (life < maxLife / 2)
+        if (life < maxLife / 2 && lifetow == false)
         {
-            this.elite = false;
-            setElite(false);
-            createLight(5, null, null, 1);
+            this.elite = true;
             data.sprx = sprScaleX;
             data.spry = sprScaleY;
-            data.maxlife = life;
+            life = maxLife * 2;
+            lifetow = true;
+
         }
 
     }
